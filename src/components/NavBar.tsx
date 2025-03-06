@@ -37,13 +37,12 @@ const NavBar = () => {
     >
       <div className="container px-4 md:px-6 mx-auto">
         <div className="flex items-center justify-between">
-          <a href="/" className="flex items-center space-x-3">
+          <a href="/" className="flex items-center">
             <img 
               src="/lovable-uploads/f4ced00e-e94b-4461-8c57-dc92e37b4a70.png" 
               alt="MiraiTech Logo" 
               className="h-12 w-auto"
             />
-            <span className="font-display font-bold text-xl">MIRAITECH</span>
           </a>
           
           {/* Desktop Nav */}

@@ -53,13 +53,12 @@ const Footer: React.FC = () => {
       <div className="container px-4 md:px-6 mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-6 gap-8 pb-16">
           <div className="md:col-span-2 space-y-6">
-            <div className="flex items-center space-x-3">
+            <div className="flex items-center">
               <img 
                 src="/lovable-uploads/f4ced00e-e94b-4461-8c57-dc92e37b4a70.png" 
                 alt="MiraiTech Logo" 
                 className="h-10 w-auto"
               />
-              <span className="font-display font-bold text-xl">MIRAITECH</span>
             </div>
             
             <p className="text-muted-foreground">
