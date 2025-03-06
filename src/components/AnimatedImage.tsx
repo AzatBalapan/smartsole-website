@@ -3,7 +3,7 @@ import React, { useState, useEffect } from 'react';
 import { cn } from '@/lib/utils';
 
 interface AnimatedImageProps extends React.ImgHTMLAttributes<HTMLImageElement> {
-  revealAnimation?: 'fade' | 'blur' | 'slide-up' | 'scale';
+  revealAnimation?: 'fade' | 'blur' | 'slide-up' | 'scale' | 'slide-right' | 'slide-left';
   delay?: number;
 }
 
@@ -45,7 +45,9 @@ const AnimatedImage: React.FC<AnimatedImageProps> = ({
     'fade': 'opacity-0 animate-fade-in',
     'blur': 'opacity-0 animate-blur-in',
     'slide-up': 'opacity-0 animate-slide-up',
-    'scale': 'opacity-0 animate-scale-in'
+    'scale': 'opacity-0 animate-scale-in',
+    'slide-right': 'opacity-0 animate-slide-right',
+    'slide-left': 'opacity-0 animate-slide-left'
   };
   
   return (
