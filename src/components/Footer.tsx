@@ -53,13 +53,13 @@ const Footer: React.FC = () => {
       <div className="container px-4 md:px-6 mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-6 gap-8 pb-16">
           <div className="md:col-span-2 space-y-6">
-            <div className="flex items-center space-x-2">
-              <div className="relative w-10 h-10 overflow-hidden">
-                <div className="w-10 h-10 bg-primary rounded-full flex items-center justify-center">
-                  <span className="text-lg font-bold text-white">S</span>
-                </div>
-              </div>
-              <span className="font-display font-bold text-xl">SmartSole</span>
+            <div className="flex items-center space-x-3">
+              <img 
+                src="/lovable-uploads/f4ced00e-e94b-4461-8c57-dc92e37b4a70.png" 
+                alt="MiraiTech Logo" 
+                className="h-10 w-auto"
+              />
+              <span className="font-display font-bold text-xl">MIRAITECH</span>
             </div>
             
             <p className="text-muted-foreground">
@@ -69,7 +69,7 @@ const Footer: React.FC = () => {
             <div className="space-y-3">
               <div className="flex items-center">
                 <Mail className="h-4 w-4 mr-2 text-primary" />
-                <span className="text-sm">hello@smartsole.tech</span>
+                <span className="text-sm">hello@miraitech.com</span>
               </div>
               <div className="flex items-center">
                 <Phone className="h-4 w-4 mr-2 text-primary" />
@@ -131,7 +131,7 @@ const Footer: React.FC = () => {
         
         <div className="pt-8 border-t border-border flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-sm text-muted-foreground">
-            © {currentYear} SmartSole Technologies. All rights reserved.
+            © {currentYear} MiraiTech. All rights reserved.
           </p>
           <div className="flex space-x-6">
             <a href="#" className="text-sm text-muted-foreground hover:text-foreground">

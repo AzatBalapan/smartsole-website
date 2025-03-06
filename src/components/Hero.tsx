@@ -23,11 +23,11 @@ const Hero: React.FC = () => {
             </div>
             
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold leading-tight tracking-tight animate-fade-in animation-delay-100">
-              Feel Every <span className="text-gradient">Step</span> with Intelligence
+              Feel Every <span className="text-gradient">Step</span> with MiraiTech
             </h1>
             
             <p className="text-lg text-muted-foreground md:text-xl max-w-lg animate-fade-in animation-delay-200">
-              SmartSole uses advanced tactile sensors to transform your walking experience, providing real-time feedback and personalized insights.
+              MiraiTech uses advanced tactile sensors to transform your walking experience, providing real-time feedback and personalized insights.
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 animate-fade-in animation-delay-300">
@@ -64,7 +64,7 @@ const Hero: React.FC = () => {
             <div className="relative z-10 w-full max-w-md mx-auto">
               <AnimatedImage 
                 src="/placeholder.svg" 
-                alt="SmartSole Insole" 
+                alt="MiraiTech Insole" 
                 className="w-full h-auto rounded-2xl shadow-xl"
                 revealAnimation="scale"
               />
