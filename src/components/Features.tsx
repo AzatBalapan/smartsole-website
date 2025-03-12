@@ -1,24 +1,25 @@
 
 import React from 'react';
-import { Footprints, Activity, HeartPulse, SmartphoneCharging, Bluetooth, MapPin } from 'lucide-react';
+import { Footprints, Activity, HeartPulse, SmartphoneCharging, Bluetooth, Ruler } from 'lucide-react';
 import AnimatedImage from './AnimatedImage';
+import CountUpNumber from './CountUpNumber';
 
 const Features: React.FC = () => {
   const features = [
     {
       icon: <Footprints className="h-6 w-6 text-primary" />,
       title: "Precision Sensing",
-      description: "Advanced sensors capture every detail of your footstep with unprecedented accuracy."
+      description: "Advanced sensors capture specific foot areas with unprecedented accuracy."
     },
     {
       icon: <Activity className="h-6 w-6 text-primary" />,
       title: "Activity Monitoring",
-      description: "Track steps, distance, and calories with laboratory-grade precision."
+      description: "Track steps, distance, and movement patterns with laboratory-grade precision."
     },
     {
       icon: <HeartPulse className="h-6 w-6 text-primary" />,
       title: "Health Insights",
-      description: "Analyze gait patterns to prevent injuries and improve posture."
+      description: "Analyze gait patterns to prevent injuries, speed up rehabilitation, and improve sport activity."
     },
     {
       icon: <SmartphoneCharging className="h-6 w-6 text-primary" />,
@@ -31,14 +32,76 @@ const Features: React.FC = () => {
       description: "Bluetooth 5.0 ensures reliable data synchronization with any device."
     },
     {
-      icon: <MapPin className="h-6 w-6 text-primary" />,
-      title: "Location Tracking",
-      description: "Optional GPS integration for accurate route mapping and navigation."
+      icon: <Ruler className="h-6 w-6 text-primary" />,
+      title: "Angle Measurements",
+      description: "Precise tracking of knee angles for improved posture and mobility assessment."
     }
   ];
   
   return (
     <section id="features" className="py-24 relative overflow-hidden">
+      {/* Video and Sales Text Section */}
+      <div className="container px-4 md:px-6 mx-auto mb-24">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+          <div className="relative rounded-2xl overflow-hidden">
+            <video 
+              className="w-full h-auto rounded-2xl"
+              autoPlay
+              muted
+              loop
+              playsInline
+              poster="/placeholder.svg"
+            >
+              <source src="/placeholder.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+          </div>
+          
+          <div className="space-y-6">
+            <h2 className="text-3xl md:text-4xl font-display font-bold tracking-tight">
+              Transform Your Movement Analysis
+            </h2>
+            <p className="text-lg text-muted-foreground">
+              Our smart insoles revolutionize how healthcare professionals and athletes track and analyze movement patterns, providing unprecedented insights for improved performance and faster rehabilitation.
+            </p>
+            <div className="grid grid-cols-2 gap-6">
+              <div className="p-4 glass rounded-lg">
+                <CountUpNumber 
+                  end={8} 
+                  suffix="+" 
+                  className="text-3xl font-display font-bold text-primary"
+                />
+                <p className="text-sm text-muted-foreground">Analytics graphs</p>
+              </div>
+              <div className="p-4 glass rounded-lg">
+                <CountUpNumber 
+                  end={5000} 
+                  suffix="+" 
+                  className="text-3xl font-display font-bold text-primary"
+                />
+                <p className="text-sm text-muted-foreground">Patients analyzed</p>
+              </div>
+              <div className="p-4 glass rounded-lg">
+                <CountUpNumber 
+                  end={10} 
+                  suffix="+" 
+                  className="text-3xl font-display font-bold text-primary"
+                />
+                <p className="text-sm text-muted-foreground">Data metrics</p>
+              </div>
+              <div className="p-4 glass rounded-lg">
+                <CountUpNumber 
+                  end={30} 
+                  suffix="%" 
+                  className="text-3xl font-display font-bold text-primary"
+                />
+                <p className="text-sm text-muted-foreground">Faster recovery</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
       {/* Background elements */}
       <div className="absolute bottom-0 right-0 w-full h-1/2 bg-secondary rounded-tl-[100px] -z-10" />
       
@@ -51,7 +114,7 @@ const Features: React.FC = () => {
             Smart Technology for Smarter Steps
           </h2>
           <p className="text-muted-foreground text-lg">
-            Discover how SmartSole transforms ordinary insoles into powerful health and fitness companions.
+            Discover how MiraiTech transforms ordinary insoles into powerful health and fitness companions.
           </p>
         </div>
         
@@ -75,7 +138,7 @@ const Features: React.FC = () => {
             <div className="order-2 md:order-1">
               <AnimatedImage 
                 src="/placeholder.svg" 
-                alt="SmartSole App Interface" 
+                alt="MiraiTech App Interface" 
                 className="w-full h-auto rounded-2xl shadow-xl"
                 revealAnimation="slide-right"
               />
@@ -89,7 +152,7 @@ const Features: React.FC = () => {
                 Your Personal Health Coach
               </h2>
               <p className="text-lg text-muted-foreground">
-                The SmartSole app transforms complex data into actionable insights. Get personalized recommendations to improve your walking technique, prevent injuries, and enhance your overall fitness level.
+                The MiraiTech app transforms complex data into actionable insights. Get personalized recommendations to improve your walking technique, prevent injuries, and enhance your overall fitness level.
               </p>
               <ul className="space-y-3">
                 {[

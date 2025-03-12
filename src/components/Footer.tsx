@@ -19,8 +19,8 @@ const Footer: React.FC = () => {
     {
       title: "Product",
       links: [
-        { name: "Features", href: "#features" },
         { name: "How It Works", href: "#how-it-works" },
+        { name: "Features", href: "#features" },
         { name: "Specifications", href: "#specs" },
         { name: "Pricing", href: "#" },
         { name: "FAQ", href: "#" }
@@ -30,9 +30,9 @@ const Footer: React.FC = () => {
       title: "Company",
       links: [
         { name: "About Us", href: "#" },
-        { name: "Careers", href: "#" },
+        { name: "Research", href: "/research" },
+        { name: "Team", href: "/team" },
         { name: "Blog", href: "#" },
-        { name: "Press", href: "#" },
         { name: "Partners", href: "#" }
       ]
     },
@@ -40,7 +40,7 @@ const Footer: React.FC = () => {
       title: "Support",
       links: [
         { name: "Help Center", href: "#" },
-        { name: "Contact Us", href: "#contact" },
+        { name: "Contact Us", href: "/contact" },
         { name: "Privacy Policy", href: "#" },
         { name: "Terms of Service", href: "#" },
         { name: "Shipping Policy", href: "#" }
@@ -62,7 +62,7 @@ const Footer: React.FC = () => {
             </div>
             
             <p className="text-muted-foreground">
-              Revolutionizing how you understand and improve your movement through intelligent tactile feedback.
+              Revolutionizing how you understand and improve your movement through intelligent tactile feedback in smart insoles.
             </p>
             
             <div className="space-y-3">

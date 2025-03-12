@@ -2,7 +2,7 @@
 import React from 'react';
 import { Button } from '@/components/ui/button';
 import AnimatedImage from './AnimatedImage';
-import { ArrowRight, Activity, Bluetooth, Zap } from 'lucide-react';
+import { ArrowRight, Activity, Bluetooth, Zap, Ruler } from 'lucide-react';
 
 const Hero: React.FC = () => {
   return (
@@ -19,7 +19,7 @@ const Hero: React.FC = () => {
                 <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span>
                 <span className="relative inline-flex rounded-full h-2 w-2 bg-primary"></span>
               </span>
-              Introducing a new era of smart footwear
+              Introducing a new era of smart insoles
             </div>
             
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold leading-tight tracking-tight animate-fade-in animation-delay-100">
