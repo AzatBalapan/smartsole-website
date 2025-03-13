@@ -146,6 +146,70 @@ export const translations: Translations = {
     ru: "Начните активность и получайте обратную связь и аналитику в реальном времени."
   },
   
+  // Research Page
+  "research.title": {
+    en: "Our Research",
+    ru: "Наши исследования"
+  },
+  "research.subtitle": {
+    en: "Discover the science behind our technology",
+    ru: "Узнайте о науке, лежащей в основе нашей технологии"
+  },
+  "research.papers": {
+    en: "Research Papers",
+    ru: "Научные статьи"
+  },
+  
+  // Team Page
+  "team.title": {
+    en: "Our Team",
+    ru: "Наша команда"
+  },
+  "team.subtitle": {
+    en: "Meet the experts behind MiraiTech",
+    ru: "Познакомьтесь с экспертами MiraiTech"
+  },
+  
+  // Contact Page
+  "contact.title": {
+    en: "Contact Us",
+    ru: "Свяжитесь с нами"
+  },
+  "contact.subtitle": {
+    en: "Get in touch with our team",
+    ru: "Связаться с нашей командой"
+  },
+  "contact.name": {
+    en: "Full Name",
+    ru: "Полное имя"
+  },
+  "contact.email": {
+    en: "Email Address",
+    ru: "Электронная почта"
+  },
+  "contact.message": {
+    en: "Your Message",
+    ru: "Ваше сообщение"
+  },
+  "contact.submit": {
+    en: "Send Message",
+    ru: "Отправить сообщение"
+  },
+  
+  // Not Found Page
+  "notFound.title": {
+    en: "Page Not Found",
+    ru: "Страница не найдена"
+  },
+  "notFound.subtitle": {
+    en: "The page you are looking for doesn't exist or has been moved.",
+    ru: "Страница, которую вы ищете, не существует или была перемещена."
+  },
+  "notFound.button": {
+    en: "Go Back Home",
+    ru: "Вернуться на главную"
+  },
+  
   // Footer
   "footer.partners": {
     en: "Our Partners",

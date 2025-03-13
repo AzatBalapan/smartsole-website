@@ -13,13 +13,20 @@ const Index = () => {
     window.scrollTo(0, 0);
     
     // Add custom cursor
-    const cursor = document.createElement('div');
-    cursor.classList.add('custom-cursor');
-    document.body.appendChild(cursor);
+    let cursor = document.querySelector('.custom-cursor');
+    
+    // If cursor doesn't exist, create it
+    if (!cursor) {
+      cursor = document.createElement('div');
+      cursor.classList.add('custom-cursor');
+      document.body.appendChild(cursor);
+    }
     
     const moveCursor = (e: MouseEvent) => {
-      cursor.style.left = `${e.clientX}px`;
-      cursor.style.top = `${e.clientY}px`;
+      if (cursor instanceof HTMLElement) {
+        cursor.style.left = `${e.clientX}px`;
+        cursor.style.top = `${e.clientY}px`;
+      }
     };
     
     document.addEventListener('mousemove', moveCursor);
