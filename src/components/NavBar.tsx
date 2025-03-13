@@ -3,10 +3,13 @@ import { useState, useEffect } from 'react';
 import { cn } from '@/lib/utils';
 import { Menu, X } from 'lucide-react';
 import Button from './Button';
+import LanguageSwitcher from './LanguageSwitcher';
+import { useLanguage } from '@/contexts/LanguageContext';
 
 const NavBar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const { t } = useLanguage();
   
   useEffect(() => {
     const handleScroll = () => {
@@ -22,11 +25,11 @@ const NavBar = () => {
   }, []);
   
   const navLinks = [
-    { name: 'How It Works', href: '#how-it-works' },
-    { name: 'Features', href: '#features' },
-    { name: 'Research', href: '/research' },
-    { name: 'Team', href: '/team' },
-    { name: 'Contact', href: '/contact' },
+    { name: t('nav.howItWorks'), href: '#how-it-works' },
+    { name: t('nav.features'), href: '#features' },
+    { name: t('nav.research'), href: '/research' },
+    { name: t('nav.team'), href: '/team' },
+    { name: t('nav.contact'), href: '/contact' },
   ];
   
   return (
@@ -60,17 +63,21 @@ const NavBar = () => {
                 </a>
               ))}
             </div>
-            <Button>Pre-order Now</Button>
+            <LanguageSwitcher />
+            <Button>{t('nav.preorder')}</Button>
           </nav>
           
           {/* Mobile menu button */}
-          <button 
-            onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-            className="md:hidden p-2 rounded-md text-foreground"
-            aria-label="Toggle menu"
-          >
-            {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
-          </button>
+          <div className="md:hidden flex items-center space-x-4">
+            <LanguageSwitcher />
+            <button 
+              onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+              className="p-2 rounded-md text-foreground"
+              aria-label="Toggle menu"
+            >
+              {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
+            </button>
+          </div>
         </div>
       </div>
       
@@ -92,7 +99,7 @@ const NavBar = () => {
               {link.name}
             </a>
           ))}
-          <Button className="w-full mt-4">Pre-order Now</Button>
+          <Button className="w-full mt-4">{t('nav.preorder')}</Button>
         </div>
       </div>
     </header>
