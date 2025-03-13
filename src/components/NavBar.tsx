@@ -1,15 +1,18 @@
 
 import { useState, useEffect } from 'react';
 import { cn } from '@/lib/utils';
-import { Menu, X } from 'lucide-react';
+import { Menu, X, Home } from 'lucide-react';
 import Button from './Button';
 import LanguageSwitcher from './LanguageSwitcher';
 import { useLanguage } from '@/contexts/LanguageContext';
+import { useLocation, Link } from 'react-router-dom';
 
 const NavBar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const { t } = useLanguage();
+  const location = useLocation();
+  const isHomePage = location.pathname === '/';
   
   useEffect(() => {
     const handleScroll = () => {
@@ -24,13 +27,23 @@ const NavBar = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
   
-  const navLinks = [
+  // Define navigation links based on current route
+  const homeNavLinks = [
     { name: t('nav.howItWorks'), href: '#how-it-works' },
     { name: t('nav.features'), href: '#features' },
     { name: t('nav.research'), href: '/research' },
     { name: t('nav.team'), href: '/team' },
     { name: t('nav.contact'), href: '/contact' },
   ];
+  
+  const otherPagesNavLinks = [
+    { name: t('nav.home'), href: '/' },
+    { name: t('nav.research'), href: '/research' },
+    { name: t('nav.team'), href: '/team' },
+    { name: t('nav.contact'), href: '/contact' },
+  ];
+  
+  const navLinks = isHomePage ? homeNavLinks : otherPagesNavLinks;
   
   return (
     <header 
@@ -41,27 +54,41 @@ const NavBar = () => {
     >
       <div className="container px-4 md:px-6 mx-auto">
         <div className="flex items-center justify-between">
-          <a href="/" className="flex items-center">
+          <Link to="/" className="flex items-center">
             <img 
               src="/lovable-uploads/f4ced00e-e94b-4461-8c57-dc92e37b4a70.png" 
               alt="MiraiTech Logo" 
               className="h-12 w-auto"
             />
-          </a>
+          </Link>
           
           {/* Desktop Nav */}
           <nav className="hidden md:flex items-center space-x-6">
             <div className="flex items-center space-x-6">
-              {navLinks.map((link) => (
-                <a 
-                  key={link.name}
-                  href={link.href}
-                  className="relative text-sm font-medium text-foreground transition-colors hover:text-primary"
-                >
-                  {link.name}
-                  <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full" />
-                </a>
-              ))}
+              {navLinks.map((link) => {
+                // Determine if it's a scroll link (#) or a route link
+                const isScrollLink = link.href.startsWith('#');
+                
+                return isScrollLink ? (
+                  <a 
+                    key={link.name}
+                    href={link.href}
+                    className="relative text-sm font-medium text-foreground transition-colors hover:text-primary"
+                  >
+                    {link.name}
+                    <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full" />
+                  </a>
+                ) : (
+                  <Link 
+                    key={link.name}
+                    to={link.href}
+                    className="relative text-sm font-medium text-foreground transition-colors hover:text-primary"
+                  >
+                    {link.name}
+                    <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full" />
+                  </Link>
+                );
+              })}
             </div>
             <LanguageSwitcher />
             <Button>{t('nav.preorder')}</Button>
@@ -89,16 +116,30 @@ const NavBar = () => {
         )}
       >
         <div className="container px-4 py-4 mx-auto space-y-4">
-          {navLinks.map((link) => (
-            <a 
-              key={link.name}
-              href={link.href}
-              className="block py-2 text-foreground hover:text-primary"
-              onClick={() => setIsMobileMenuOpen(false)}
-            >
-              {link.name}
-            </a>
-          ))}
+          {navLinks.map((link) => {
+            // Determine if it's a scroll link (#) or a route link
+            const isScrollLink = link.href.startsWith('#');
+            
+            return isScrollLink ? (
+              <a 
+                key={link.name}
+                href={link.href}
+                className="block py-2 text-foreground hover:text-primary"
+                onClick={() => setIsMobileMenuOpen(false)}
+              >
+                {link.name}
+              </a>
+            ) : (
+              <Link 
+                key={link.name}
+                to={link.href}
+                className="block py-2 text-foreground hover:text-primary"
+                onClick={() => setIsMobileMenuOpen(false)}
+              >
+                {link.name}
+              </Link>
+            );
+          })}
           <Button className="w-full mt-4">{t('nav.preorder')}</Button>
         </div>
       </div>

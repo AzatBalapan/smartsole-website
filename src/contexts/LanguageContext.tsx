@@ -1,4 +1,3 @@
-
 import React, { createContext, useContext, useState, useEffect, ReactNode } from 'react';
 
 // Define available languages
@@ -36,8 +35,12 @@ export const translations: Translations = {
     ru: "Контакты"
   },
   "nav.preorder": {
-    en: "Pre-order Now",
+    en: "Pre-Order Now",
     ru: "Предзаказ"
+  },
+  "nav.home": {
+    en: "Home",
+    ru: "Главная"
   },
   
   // Hero
