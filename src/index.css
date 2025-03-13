@@ -71,10 +71,15 @@
 
   body {
     @apply bg-background text-foreground antialiased;
+    cursor: none;
   }
   
   html {
     @apply scroll-smooth;
+  }
+  
+  a, button, input, textarea, select {
+    cursor: none;
   }
 }
 
@@ -114,4 +119,25 @@
   .animation-delay-1000 {
     animation-delay: 1000ms;
   }
+}
+
+/* Custom Cursor */
+.custom-cursor {
+  position: fixed;
+  width: 40px;
+  height: 20px;
+  background-image: url('/placeholder.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  pointer-events: none;
+  z-index: 9999;
+  transform: translate(-50%, -50%);
+  transition: transform 0.1s ease;
+}
+
+/* Custom cursor states */
+a:hover ~ .custom-cursor,
+button:hover ~ .custom-cursor {
+  transform: translate(-50%, -50%) scale(1.2);
 }

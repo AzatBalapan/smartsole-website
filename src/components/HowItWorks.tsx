@@ -1,33 +1,39 @@
 
-import React from 'react';
+import React, { useState } from 'react';
 import { cn } from '@/lib/utils';
 import AnimatedImage from './AnimatedImage';
 
 const HowItWorks: React.FC = () => {
+  const [activeStep, setActiveStep] = useState<number | null>(null);
+
   const steps = [
     {
       number: '01',
       title: 'Insert in Your Shoes',
       description: 'Simply place the SmartSole inserts into any pair of shoes. The ultra-thin design ensures comfort without sacrificing function.',
-      delay: 100
+      delay: 100,
+      image: '/placeholder.svg'
     },
     {
       number: '02',
       title: 'Connect to Your Device',
       description: 'Pair with the SmartSole app via Bluetooth. The seamless connection process takes less than 30 seconds.',
-      delay: 300
+      delay: 300,
+      image: '/placeholder.svg'
     },
     {
       number: '03',
       title: 'Calibrate Your Profile',
-      description: 'Take a few steps to calibrate the sensors to your unique walking pattern for personalized analysis.',
-      delay: 500
+      description: 'Take a few steps to calibrate the sensors to your unique walking pattern for personalized analysis and save your data for future analysis.',
+      delay: 500,
+      image: '/placeholder.svg'
     },
     {
       number: '04',
       title: 'Start Moving',
       description: 'Live your life while SmartSole silently collects data, providing insights and feedback as you move.',
-      delay: 700
+      delay: 700,
+      image: '/placeholder.svg'
     }
   ];
   
@@ -47,14 +53,16 @@ const HowItWorks: React.FC = () => {
         </div>
         
         <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-center mb-16">
-          <div className="space-y-8">
+          <div className="space-y-8 relative">
             {steps.map((step, index) => (
               <div 
                 key={index} 
                 className={cn(
-                  "flex gap-6 opacity-0 animate-fade-in",
+                  "flex gap-6 opacity-0 animate-fade-in relative",
                   {[`animation-delay-${step.delay}`]: true}
                 )}
+                onMouseEnter={() => setActiveStep(index)}
+                onMouseLeave={() => setActiveStep(null)}
               >
                 <div className="flex-shrink-0">
                   <div className="w-12 h-12 rounded-full border-2 border-primary/20 flex items-center justify-center">
@@ -64,6 +72,16 @@ const HowItWorks: React.FC = () => {
                 <div>
                   <h3 className="text-xl font-bold mb-2">{step.title}</h3>
                   <p className="text-muted-foreground">{step.description}</p>
+                  
+                  {activeStep === index && (
+                    <div className="absolute -right-40 top-0 w-36 h-36 pointer-events-none animate-fade-in z-50">
+                      <img 
+                        src={step.image} 
+                        alt={step.title} 
+                        className="w-full h-full object-contain"
+                      />
+                    </div>
+                  )}
                 </div>
               </div>
             ))}
@@ -71,12 +89,18 @@ const HowItWorks: React.FC = () => {
           
           <div className="relative">
             <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-64 h-64 bg-primary/10 rounded-full filter blur-3xl animate-pulse-slow" />
-            <AnimatedImage 
-              src="/placeholder.svg" 
-              alt="SmartSole Setup Process" 
-              className="relative z-10 w-full h-auto rounded-2xl shadow-xl"
-              revealAnimation="slide-left"
-            />
+            <div className="relative z-10 rounded-2xl shadow-xl overflow-hidden">
+              <video 
+                className="w-full h-auto"
+                autoPlay
+                muted
+                loop
+                playsInline
+              >
+                <source src="/placeholder.mp4" type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
+            </div>
           </div>
         </div>
         

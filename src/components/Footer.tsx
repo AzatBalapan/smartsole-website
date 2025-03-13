@@ -1,18 +1,17 @@
 
 import React from 'react';
 import { cn } from '@/lib/utils';
-import { Facebook, Twitter, Instagram, Linkedin, Youtube, Mail, Phone, MapPin } from 'lucide-react';
+import { Mail, Phone, MapPin } from 'lucide-react';
 import Button from './Button';
 
 const Footer: React.FC = () => {
   const currentYear = new Date().getFullYear();
   
-  const socialLinks = [
-    { icon: <Facebook size={18} />, href: "#", label: "Facebook" },
-    { icon: <Twitter size={18} />, href: "#", label: "Twitter" },
-    { icon: <Instagram size={18} />, href: "#", label: "Instagram" },
-    { icon: <Linkedin size={18} />, href: "#", label: "LinkedIn" },
-    { icon: <Youtube size={18} />, href: "#", label: "YouTube" }
+  const partners = [
+    { name: "Partner 1", logo: "/placeholder.svg" },
+    { name: "Partner 2", logo: "/placeholder.svg" },
+    { name: "Partner 3", logo: "/placeholder.svg" },
+    { name: "Partner 4", logo: "/placeholder.svg" }
   ];
   
   const footerLinks = [
@@ -21,7 +20,6 @@ const Footer: React.FC = () => {
       links: [
         { name: "How It Works", href: "#how-it-works" },
         { name: "Features", href: "#features" },
-        { name: "Specifications", href: "#specs" },
         { name: "Pricing", href: "#" },
         { name: "FAQ", href: "#" }
       ]
@@ -51,6 +49,22 @@ const Footer: React.FC = () => {
   return (
     <footer id="contact" className="relative bg-secondary pt-16 pb-8 overflow-hidden">
       <div className="container px-4 md:px-6 mx-auto">
+        {/* Partners Section */}
+        <div className="mb-16">
+          <h3 className="text-2xl font-bold mb-8 text-center">Our Partners</h3>
+          <div className="flex flex-wrap justify-center gap-8 items-center">
+            {partners.map((partner, index) => (
+              <div key={index} className="bg-white/80 p-4 rounded-lg shadow-sm">
+                <img 
+                  src={partner.logo} 
+                  alt={partner.name} 
+                  className="h-12 w-auto"
+                />
+              </div>
+            ))}
+          </div>
+        </div>
+        
         <div className="grid grid-cols-1 md:grid-cols-6 gap-8 pb-16">
           <div className="md:col-span-2 space-y-6">
             <div className="flex items-center">
@@ -78,19 +92,6 @@ const Footer: React.FC = () => {
                 <MapPin className="h-4 w-4 mr-2 text-primary flex-shrink-0 mt-1" />
                 <span className="text-sm">123 Innovation Way, Tech Hub, CA 94103</span>
               </div>
-            </div>
-            
-            <div className="flex space-x-4">
-              {socialLinks.map((link, index) => (
-                <a
-                  key={index}
-                  href={link.href}
-                  className="w-8 h-8 rounded-full bg-foreground/5 flex items-center justify-center text-muted-foreground hover:bg-primary/10 hover:text-primary transition-colors"
-                  aria-label={link.label}
-                >
-                  {link.icon}
-                </a>
-              ))}
             </div>
           </div>
           

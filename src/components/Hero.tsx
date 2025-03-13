@@ -2,7 +2,7 @@
 import React from 'react';
 import { Button } from '@/components/ui/button';
 import AnimatedImage from './AnimatedImage';
-import { ArrowRight, Activity, Bluetooth, Zap, Ruler } from 'lucide-react';
+import { ArrowRight, Activity, Bluetooth, Zap, Footprints, HeartPulse, Ruler } from 'lucide-react';
 
 const Hero: React.FC = () => {
   return (
@@ -40,18 +40,30 @@ const Hero: React.FC = () => {
               </Button>
             </div>
             
-            <div className="grid grid-cols-3 gap-4 pt-6 animate-fade-in animation-delay-500">
-              <div className="flex flex-col items-center text-center p-3 rounded-lg glass">
-                <Activity className="h-6 w-6 text-primary mb-2" />
-                <span className="text-sm font-medium">Activity Tracking</span>
+            <div className="grid grid-cols-3 md:grid-cols-6 gap-2 pt-6 animate-fade-in animation-delay-500">
+              <div className="flex flex-col items-center text-center p-2 rounded-lg glass">
+                <Footprints className="h-6 w-6 text-primary mb-1" />
+                <span className="text-xs font-medium">Precision Sensing</span>
               </div>
-              <div className="flex flex-col items-center text-center p-3 rounded-lg glass">
-                <Bluetooth className="h-6 w-6 text-primary mb-2" />
-                <span className="text-sm font-medium">Wireless Sync</span>
+              <div className="flex flex-col items-center text-center p-2 rounded-lg glass">
+                <Activity className="h-6 w-6 text-primary mb-1" />
+                <span className="text-xs font-medium">Activity Monitoring</span>
               </div>
-              <div className="flex flex-col items-center text-center p-3 rounded-lg glass">
-                <Zap className="h-6 w-6 text-primary mb-2" />
-                <span className="text-sm font-medium">10+ Hour Battery</span>
+              <div className="flex flex-col items-center text-center p-2 rounded-lg glass">
+                <HeartPulse className="h-6 w-6 text-primary mb-1" />
+                <span className="text-xs font-medium">Health Insights</span>
+              </div>
+              <div className="flex flex-col items-center text-center p-2 rounded-lg glass">
+                <Bluetooth className="h-6 w-6 text-primary mb-1" />
+                <span className="text-xs font-medium">Wireless Sync</span>
+              </div>
+              <div className="flex flex-col items-center text-center p-2 rounded-lg glass">
+                <Zap className="h-6 w-6 text-primary mb-1" />
+                <span className="text-xs font-medium">10+ Hour Battery</span>
+              </div>
+              <div className="flex flex-col items-center text-center p-2 rounded-lg glass">
+                <Ruler className="h-6 w-6 text-primary mb-1" />
+                <span className="text-xs font-medium">Angle Measurements</span>
               </div>
             </div>
           </div>
@@ -84,10 +96,10 @@ const Hero: React.FC = () => {
               <div className="absolute -left-6 top-20 p-4 glass rounded-xl shadow-lg animate-slide-up animation-delay-1000">
                 <div className="flex items-center space-x-3">
                   <div className="w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center">
-                    <Zap className="h-5 w-5 text-primary" />
+                    <Ruler className="h-5 w-5 text-primary" />
                   </div>
                   <div>
-                    <p className="text-sm font-medium">Responsive Feedback</p>
+                    <p className="text-sm font-medium">Angle Measurements</p>
                     <p className="text-xs text-muted-foreground">Real-time data</p>
                   </div>
                 </div>
