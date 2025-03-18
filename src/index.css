@@ -122,29 +122,37 @@
 
 /* Custom Cursor */
 .custom-cursor {
-  position: fixed;
-  width: 40px;
-  height: 40px;
-  background-image: url("/lovable-uploads/8cc581ea-d0c8-4cb4-bd7e-c2dbf90c753f.png");
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-  pointer-events: none;
-  z-index: 9999;
-  transform: translate(0, 0);
-  transition: transform 0.05s ease;
-  will-change: transform, left, top;
+  @media (min-width: 768px) {
+    position: fixed;
+    width: 40px;
+    height: 40px;
+    background-image: url("/lovable-uploads/8cc581ea-d0c8-4cb4-bd7e-c2dbf90c753f.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    pointer-events: none;
+    z-index: 9999;
+    transform: translate(0, 0);
+    transition: transform 0.05s ease;
+    will-change: transform, left, top;
+  }
+
+  @media (max-width: 767px) {
+    display: none !important;
+  }
 }
 
 /* Custom cursor states */
-a:hover ~ .custom-cursor,
-button:hover ~ .custom-cursor {
-  width: 45px;
-  height: 45px;
-}
+@media (min-width: 768px) {
+  a:hover ~ .custom-cursor,
+  button:hover ~ .custom-cursor {
+    width: 45px;
+    height: 45px;
+  }
 
-input:focus ~ .custom-cursor,
-textarea:focus ~ .custom-cursor,
-select:focus ~ .custom-cursor {
-  transform: translate(0, 0) scale(0.8);
+  input:focus ~ .custom-cursor,
+  textarea:focus ~ .custom-cursor,
+  select:focus ~ .custom-cursor {
+    transform: translate(0, 0) scale(0.8);
+  }
 }

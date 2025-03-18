@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { cn } from '@/lib/utils';
 import { Mail, Phone, MapPin } from 'lucide-react';
@@ -49,7 +48,6 @@ const Footer: React.FC = () => {
   return (
     <footer id="contact" className="relative bg-secondary pt-16 pb-8 overflow-hidden">
       <div className="container px-4 md:px-6 mx-auto">
-        {/* Partners Section */}
         <div className="mb-16">
           <h3 className="text-2xl font-bold mb-8 text-center">Our Partners</h3>
           <div className="flex flex-wrap justify-center gap-8 items-center">
@@ -82,15 +80,15 @@ const Footer: React.FC = () => {
             <div className="space-y-3">
               <div className="flex items-center">
                 <Mail className="h-4 w-4 mr-2 text-primary" />
-                <span className="text-sm">hello@miraitech.com</span>
+                <span className="text-sm">hello@miraitech.kz</span>
               </div>
               <div className="flex items-center">
                 <Phone className="h-4 w-4 mr-2 text-primary" />
-                <span className="text-sm">+1 (555) 123-4567</span>
+                <span className="text-sm">+7 (747) 123-4567</span>
               </div>
               <div className="flex items-start">
                 <MapPin className="h-4 w-4 mr-2 text-primary flex-shrink-0 mt-1" />
-                <span className="text-sm">123 Innovation Way, Tech Hub, CA 94103</span>
+                <span className="text-sm">53 Kabanbay Batyr Avenue, Nazarbayev University<br/>Astana, 010000<br/>Kazakhstan</span>
               </div>
             </div>
           </div>

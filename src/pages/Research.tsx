@@ -1,4 +1,3 @@
-
 import React from 'react';
 import NavBar from '@/components/NavBar';
 import Footer from '@/components/Footer';
@@ -8,32 +7,32 @@ import { Button } from '@/components/ui/button';
 const Research: React.FC = () => {
   const papers = [
     {
-      title: "Gait Analysis Using Smart Insoles: A Review of Current Technologies",
-      authors: "Johnson K., Smith M., et al.",
-      journal: "Journal of Biomechanics",
+      title: "Flexible and self‐powered nano‐wound dressings with wireless alert system for real‐time wound monitoring",
+      authors: "Zhandos Yessenbayev, Akhan Kairzhan, et al.",
+      journal: "Advanced Materials Technologies",
+      year: "2024",
+      link: "https://advanced.onlinelibrary.wiley.com/doi/full/10.1002/admt.202401282"
+    },
+    {
+      title: "Braille Smart Insole: a Haptic Navigation Device for Visually Impaired",
+      authors: "Yeszhan M., Yessenbayev Z., et al.",
+      journal: "IEEE Access",
+      year: "2024",
+      link: "https://ieeexplore.ieee.org/abstract/document/10843698"
+    },
+    {
+      title: "Walking‐Based Energy Harvesting from Residual Vibration of Shoe‐Integrated Piezoelectric Patches",
+      authors: "Kairzhan A., Yessenbayev Z., et al.",
+      journal: "Advanced Sustainable Research",
       year: "2023",
-      link: "#"
+      link: "https://advanced.onlinelibrary.wiley.com/doi/full/10.1002/adsr.202300163"
     },
     {
-      title: "Improving Rehabilitation Outcomes with Smart Insole Technology",
-      authors: "Garcia T., Williams J., et al.",
-      journal: "Physical Therapy & Rehabilitation",
-      year: "2022",
-      link: "#"
-    },
-    {
-      title: "Machine Learning Approaches for Gait Pattern Recognition Using Insole Pressure Sensors",
-      authors: "Zhang H., Miller L., et al.",
-      journal: "IEEE Transactions on Biomedical Engineering",
-      year: "2023",
-      link: "#"
-    },
-    {
-      title: "Clinical Applications of Smart Insoles in Elderly Fall Prevention",
-      authors: "Thompson R., Baker C., et al.",
-      journal: "Journal of Geriatric Medicine",
-      year: "2022",
-      link: "#"
+      title: "Design and Optimization of Triboelectric Nanogenerator for Shoe Energy Harvesting",
+      authors: "Yessenbayev Z., Kairzhan A., et al.",
+      journal: "ECS Meeting Abstracts",
+      year: "2021",
+      link: "https://iopscience.iop.org/article/10.1149/MA2021-02311911mtgabs/meta"
     }
   ];
 

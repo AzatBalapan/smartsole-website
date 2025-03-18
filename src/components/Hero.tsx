@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Button } from '@/components/ui/button';
 import AnimatedImage from './AnimatedImage';
@@ -7,7 +6,6 @@ import { ArrowRight, Activity, Bluetooth, Zap, Footprints, HeartPulse, Ruler } f
 const Hero: React.FC = () => {
   return (
     <section className="relative overflow-hidden pt-32 pb-20 md:pb-32 md:pt-40">
-      {/* Background gradient elements */}
       <div className="absolute -top-24 -left-24 w-96 h-96 bg-primary/20 rounded-full filter blur-3xl opacity-50 animate-pulse-slow" />
       <div className="absolute top-1/2 right-0 w-72 h-72 bg-primary/10 rounded-full filter blur-2xl opacity-30 animate-float" />
       
@@ -26,10 +24,6 @@ const Hero: React.FC = () => {
               Feel Every <span className="text-gradient">Step</span> with MiraiTech
             </h1>
             
-            <p className="text-lg text-muted-foreground md:text-xl max-w-lg animate-fade-in animation-delay-200">
-              MiraiTech uses advanced tactile sensors to transform your walking experience, providing real-time feedback and personalized insights.
-            </p>
-            
             <div className="flex flex-col sm:flex-row gap-4 animate-fade-in animation-delay-300">
               <Button size="lg" className="group">
                 Pre-order Now
@@ -40,7 +34,7 @@ const Hero: React.FC = () => {
               </Button>
             </div>
             
-            <div className="grid grid-cols-3 md:grid-cols-6 gap-2 pt-6 animate-fade-in animation-delay-500">
+            <div className="grid grid-cols-3 gap-4 pt-6 animate-fade-in animation-delay-500">
               <div className="flex flex-col items-center text-center p-2 rounded-lg glass">
                 <Footprints className="h-6 w-6 text-primary mb-1" />
                 <span className="text-xs font-medium">Precision Sensing</span>
