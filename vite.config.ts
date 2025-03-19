@@ -6,7 +6,7 @@ import { componentTagger } from "lovable-tagger";
 
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
-  base: "/smartsole-website/",
+  // Remove the base path to make it work with GitHub Pages
   server: {
     host: "::",
     port: 8080,
