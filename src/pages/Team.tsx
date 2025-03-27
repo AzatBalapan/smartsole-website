@@ -10,7 +10,7 @@ const Team: React.FC = () => {
       name: "Dr. Gulnur Kalimuldina",
       role: "Founder",
       bio: "Leads the MiraiTech team with extensive expertise in biomedical engineering and innovative medical device development.",
-      image: "/lovable-uploads/e3fa24a7-153b-4215-b531-8ddf4a408ff4.png", 
+      image: "/lovable-uploads/Gulnur.jpg", 
       social: {
         linkedin: "#"
       }
