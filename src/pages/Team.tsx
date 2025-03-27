@@ -7,63 +7,86 @@ import { Github, Linkedin, Twitter } from 'lucide-react';
 const Team: React.FC = () => {
   const teamMembers = [
     {
-      name: "Dr. Sarah Chen",
-      role: "CEO & Co-Founder",
-      bio: "Former biomedical engineer with 15+ years of experience in medical device innovation. Led the initial research that became MiraiTech's core technology.",
-      image: "/placeholder.svg",
-      social: {
-        linkedin: "#",
-        twitter: "#"
-      }
-    },
-    {
-      name: "Dr. Michael Patel",
-      role: "CTO & Co-Founder",
-      bio: "Specialist in machine learning and sensor technology with a background in sports medicine. Developed the proprietary algorithms that power our analytics.",
-      image: "/placeholder.svg",
-      social: {
-        linkedin: "#",
-        twitter: "#",
-        github: "#"
-      }
-    },
-    {
-      name: "Emma Rodriguez",
-      role: "Head of Product",
-      bio: "Former professional athlete with expertise in product management. Ensures our technology meets the real needs of athletes and healthcare providers.",
-      image: "/placeholder.svg",
-      social: {
-        linkedin: "#",
-        twitter: "#"
-      }
-    },
-    {
-      name: "Thomas Kim",
-      role: "Chief Medical Officer",
-      bio: "Orthopedic surgeon with specialization in sports medicine and rehabilitation. Guides clinical applications and oversees research partnerships.",
-      image: "/placeholder.svg",
+      name: "Dr. Gulnur Kalimuldina",
+      role: "Founder",
+      bio: "Leads the MiraiTech team with extensive expertise in biomedical engineering and innovative medical device development.",
+      image: "/lovable-uploads/e3fa24a7-153b-4215-b531-8ddf4a408ff4.png",
       social: {
         linkedin: "#"
       }
     },
     {
-      name: "Alex Johnson",
-      role: "Lead Software Engineer",
-      bio: "Experienced full-stack developer with expertise in real-time data processing and mobile applications. Leads the development of our software ecosystem.",
-      image: "/placeholder.svg",
+      name: "Dr. Azamat Yeshmukhametov",
+      role: "Co-founder",
+      bio: "Expert in robotics and automation systems, bringing technical leadership to the development of MiraiTech's core technologies.",
+      image: "/lovable-uploads/6565c188-d6ad-4797-a558-a476fa1e1e7f.png",
+      social: {
+        linkedin: "#"
+      }
+    },
+    {
+      name: "Adeliya Anash",
+      role: "Project Manager",
+      bio: "Oversees the planning, execution, and delivery of MiraiTech's projects ensuring seamless coordination across all teams.",
+      image: "/lovable-uploads/d309a1d5-0387-4dc7-be96-0cdae01cca10.png",
+      social: {
+        linkedin: "#"
+      }
+    },
+    {
+      name: "Anton Novikov",
+      role: "Senior Developer",
+      bio: "Leads the software development team, architecting the technical backbone of MiraiTech's innovative insole solutions.",
+      image: "/lovable-uploads/f60bb705-4c33-4d24-ad90-ee05a17fbcf7.png",
       social: {
         linkedin: "#",
         github: "#"
       }
     },
     {
-      name: "Dr. Grace Liu",
-      role: "Research Director",
-      bio: "PhD in biomechanics with extensive research experience. Leads our ongoing studies and collaborations with academic and clinical partners.",
-      image: "/placeholder.svg",
+      name: "Moldir Issabek",
+      role: "Material Engineer",
+      bio: "Specializes in advanced materials research and development, creating durable and responsive components for our smart insoles.",
+      image: "/lovable-uploads/8364ee5f-ad4a-40fa-8908-a6a86c8474dc.png",
+      social: {
+        linkedin: "#"
+      }
+    },
+    {
+      name: "Azat Balapan",
+      role: "Data Scientist",
+      bio: "Develops sophisticated algorithms to analyze movement patterns and provide actionable insights through our technology.",
+      image: "/lovable-uploads/a73aa670-ad28-4140-832b-85d5017fe6b7.png",
       social: {
         linkedin: "#",
-        twitter: "#"
+        github: "#"
+      }
+    },
+    {
+      name: "Sultandiar Mukhamedkali",
+      role: "Medical Expert",
+      bio: "Provides crucial medical expertise to ensure our technology meets therapeutic standards and delivers meaningful health benefits.",
+      image: "/lovable-uploads/073e5c3e-0a50-4dca-bc19-5aa5e456589a.png",
+      social: {
+        linkedin: "#"
+      }
+    },
+    {
+      name: "Manat Nursultan",
+      role: "Hardware Developer",
+      bio: "Designs and refines the physical components of our smart insoles, focusing on durability, comfort, and functionality.",
+      image: "/lovable-uploads/318af1c2-b9c7-4b70-9f4e-fefaa13abe88.png",
+      social: {
+        linkedin: "#"
+      }
+    },
+    {
+      name: "Nurassyl Nurmaganbet",
+      role: "Electronic Engineer",
+      bio: "Develops the electronic systems that enable precise sensing and feedback mechanisms in our smart insole technology.",
+      image: "/lovable-uploads/b1c3b268-980d-4721-8946-2c659798ff95.png",
+      social: {
+        linkedin: "#"
       }
     }
   ];

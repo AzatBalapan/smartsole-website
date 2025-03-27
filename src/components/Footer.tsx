@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { cn } from '@/lib/utils';
 import { Mail, Phone, MapPin } from 'lucide-react';
@@ -78,9 +79,12 @@ const Footer: React.FC = () => {
             </p>
             
             <div className="space-y-3">
-              <div className="flex items-center">
-                <Mail className="h-4 w-4 mr-2 text-primary" />
-                <span className="text-sm">hello@miraitech.kz</span>
+              <div className="flex items-start">
+                <Mail className="h-4 w-4 mr-2 text-primary flex-shrink-0 mt-1" />
+                <div className="space-y-1">
+                  <span className="text-sm block">gkalimuldina@nu.edu.kz</span>
+                  <span className="text-sm block">azamat.yeshmukhametov@nu.edu.kz</span>
+                </div>
               </div>
               <div className="flex items-center">
                 <Phone className="h-4 w-4 mr-2 text-primary" />

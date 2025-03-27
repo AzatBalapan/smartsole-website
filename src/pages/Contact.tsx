@@ -36,17 +36,22 @@ const Contact: React.FC = () => {
                       <Mail className="h-5 w-5 text-primary mr-3 mt-0.5" />
                       <div>
                         <h3 className="font-medium">Email</h3>
-                        <a href="mailto:info@miraitech.com" className="text-muted-foreground hover:text-primary transition-colors">
-                          info@miraitech.com
-                        </a>
+                        <div className="space-y-1">
+                          <a href="mailto:gkalimuldina@nu.edu.kz" className="block text-muted-foreground hover:text-primary transition-colors">
+                            gkalimuldina@nu.edu.kz
+                          </a>
+                          <a href="mailto:azamat.yeshmukhametov@nu.edu.kz" className="block text-muted-foreground hover:text-primary transition-colors">
+                            azamat.yeshmukhametov@nu.edu.kz
+                          </a>
+                        </div>
                       </div>
                     </div>
                     <div className="flex items-start">
                       <Phone className="h-5 w-5 text-primary mr-3 mt-0.5" />
                       <div>
                         <h3 className="font-medium">Phone</h3>
-                        <a href="tel:+1-555-123-4567" className="text-muted-foreground hover:text-primary transition-colors">
-                          +1 (555) 123-4567
+                        <a href="tel:+7-747-123-4567" className="text-muted-foreground hover:text-primary transition-colors">
+                          +7 (747) 123-4567
                         </a>
                       </div>
                     </div>
@@ -55,9 +60,10 @@ const Contact: React.FC = () => {
                       <div>
                         <h3 className="font-medium">Office</h3>
                         <address className="text-muted-foreground not-italic">
-                          123 Innovation Way<br />
-                          Tech Hub, CA 94103<br />
-                          United States
+                          53 Kabanbay Batyr Avenue<br />
+                          Nazarbayev University<br />
+                          Astana, 010000<br />
+                          Kazakhstan
                         </address>
                       </div>
                     </div>
@@ -80,20 +86,20 @@ const Contact: React.FC = () => {
                     <div className="space-y-2">
                       <div className="flex items-center">
                         <MessageSquare className="h-5 w-5 text-primary mr-2" />
-                        <h3 className="font-medium">Customer Support</h3>
+                        <h3 className="font-medium">Research Team</h3>
                       </div>
-                      <a href="mailto:support@miraitech.com" className="block text-muted-foreground hover:text-primary transition-colors">
-                        support@miraitech.com
+                      <a href="mailto:gkalimuldina@nu.edu.kz" className="block text-muted-foreground hover:text-primary transition-colors">
+                        gkalimuldina@nu.edu.kz
                       </a>
-                      <p className="text-sm text-muted-foreground">For existing customers</p>
+                      <p className="text-sm text-muted-foreground">For research inquiries</p>
                     </div>
                     <div className="space-y-2">
                       <div className="flex items-center">
                         <Building className="h-5 w-5 text-primary mr-2" />
                         <h3 className="font-medium">Business Development</h3>
                       </div>
-                      <a href="mailto:partnerships@miraitech.com" className="block text-muted-foreground hover:text-primary transition-colors">
-                        partnerships@miraitech.com
+                      <a href="mailto:azamat.yeshmukhametov@nu.edu.kz" className="block text-muted-foreground hover:text-primary transition-colors">
+                        azamat.yeshmukhametov@nu.edu.kz
                       </a>
                       <p className="text-sm text-muted-foreground">For partnership inquiries</p>
                     </div>
@@ -129,14 +135,14 @@ const Contact: React.FC = () => {
 
             <div className="rounded-xl overflow-hidden h-[400px]">
               <iframe 
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.0673431906104!2d-122.41941548534444!3d37.77639637975903!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085809c6c8f4459%3A0xb10ed6d9b5050fa5!2sSan%20Francisco%2C%20CA!5e0!3m2!1sen!2sus!4v1625612054527!5m2!1sen!2sus" 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2505.4651428287675!2d71.40355177704071!3d51.090833941811965!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4245841c89c614c7%3A0x3e5ca8937191b77c!2sNazarbayev%20University!5e0!3m2!1sen!2skz!4v1723476563132!5m2!1sen!2skz" 
                 width="100%" 
                 height="100%" 
                 style={{ border: 0 }}
                 allowFullScreen
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
-                title="MiraiTech Office Location"
+                title="MiraiTech Office Location at Nazarbayev University"
               />
             </div>
           </div>
