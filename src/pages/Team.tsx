@@ -2,7 +2,7 @@
 import React from 'react';
 import NavBar from '@/components/NavBar';
 import Footer from '@/components/Footer';
-import { Github, Linkedin, Twitter } from 'lucide-react';
+import { Github, Linkedin } from 'lucide-react';
 
 const Team: React.FC = () => {
   const teamMembers = [
@@ -19,7 +19,7 @@ const Team: React.FC = () => {
       name: "Dr. Azamat Yeshmukhametov",
       role: "Co-founder",
       bio: "Expert in robotics and automation systems, bringing technical leadership to the development of MiraiTech's core technologies.",
-      image: "/lovable-uploads/6565c188-d6ad-4797-a558-a476fa1e1e7f.png",
+      image: "/lovable-uploads/Azamat.jpg",
       social: {
         linkedin: "#"
       }
@@ -28,7 +28,7 @@ const Team: React.FC = () => {
       name: "Adeliya Anash",
       role: "Project Manager",
       bio: "Oversees the planning, execution, and delivery of MiraiTech's projects ensuring seamless coordination across all teams.",
-      image: "/lovable-uploads/d309a1d5-0387-4dc7-be96-0cdae01cca10.png", 
+      image: "/lovable-uploads/Adeliya.jpg", 
       social: {
         linkedin: "#"
       }
@@ -37,7 +37,7 @@ const Team: React.FC = () => {
       name: "Anton Novikov",
       role: "Senior Developer",
       bio: "Leads the software development team, architecting the technical backbone of MiraiTech's innovative insole solutions.",
-      image: "/lovable-uploads/f60bb705-4c33-4d24-ad90-ee05a17fbcf7.png",
+      image: "/lovable-uploads/Anton.jpg",
       social: {
         linkedin: "#",
         github: "#"
@@ -47,7 +47,7 @@ const Team: React.FC = () => {
       name: "Moldir Issabek",
       role: "Material Engineer",
       bio: "Specializes in advanced materials research and development, creating durable and responsive components for our smart insoles.",
-      image: "/lovable-uploads/8364ee5f-ad4a-40fa-8908-a6a86c8474dc.png",
+      image: "/lovable-uploads/Moldir.jpg",
       social: {
         linkedin: "#"
       }
@@ -56,7 +56,7 @@ const Team: React.FC = () => {
       name: "Azat Balapan",
       role: "Data Scientist",
       bio: "Develops sophisticated algorithms to analyze movement patterns and provide actionable insights through our technology.",
-      image: "/lovable-uploads/a73aa670-ad28-4140-832b-85d5017fe6b7.png",
+      image: "/lovable-uploads/Azat.jpg",
       social: {
         linkedin: "#",
         github: "#"
@@ -66,7 +66,7 @@ const Team: React.FC = () => {
       name: "Sultandiar Mukhamedkali",
       role: "Medical Expert",
       bio: "Provides crucial medical expertise to ensure our technology meets therapeutic standards and delivers meaningful health benefits.",
-      image: "/lovable-uploads/073e5c3e-0a50-4dca-bc19-5aa5e456589a.png",
+      image: "/lovable-uploads/Sultandiyar.jpg",
       social: {
         linkedin: "#"
       }
@@ -75,7 +75,7 @@ const Team: React.FC = () => {
       name: "Manat Nursultan",
       role: "Hardware Developer",
       bio: "Designs and refines the physical components of our smart insoles, focusing on durability, comfort, and functionality.",
-      image: "/lovable-uploads/318af1c2-b9c7-4b70-9f4e-fefaa13abe88.png",
+      image: "/lovable-uploads/Manat.jpg",
       social: {
         linkedin: "#"
       }
@@ -84,7 +84,7 @@ const Team: React.FC = () => {
       name: "Nurassyl Nurmaganbet",
       role: "Electronic Engineer",
       bio: "Develops the electronic systems that enable precise sensing and feedback mechanisms in our smart insole technology.",
-      image: "/lovable-uploads/b1c3b268-980d-4721-8946-2c659798ff95.png",
+      image: "/lovable-uploads/Nurasil.jpg",
       social: {
         linkedin: "#"
       }
