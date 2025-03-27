@@ -1,3 +1,4 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 @tailwind base;
@@ -71,6 +72,7 @@
   body {
     @apply bg-background text-foreground antialiased;
     cursor: none !important;
+    caret-color: transparent !important;
   }
   
   html {
@@ -132,9 +134,12 @@
     background-position: center;
     pointer-events: none;
     z-index: 9999;
-    transform: translate(0, 0);
+    transform: translate(-50%, -50%);
     transition: transform 0.05s ease;
     will-change: transform, left, top;
+    left: 0;
+    top: 0;
+    opacity: 1;
   }
 
   @media (max-width: 767px) {
@@ -153,6 +158,6 @@
   input:focus ~ .custom-cursor,
   textarea:focus ~ .custom-cursor,
   select:focus ~ .custom-cursor {
-    transform: translate(0, 0) scale(0.8);
+    transform: translate(-50%, -50%) scale(0.8);
   }
 }

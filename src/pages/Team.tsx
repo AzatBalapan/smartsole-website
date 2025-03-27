@@ -3,6 +3,8 @@ import React from 'react';
 import NavBar from '@/components/NavBar';
 import Footer from '@/components/Footer';
 import { Github, Linkedin } from 'lucide-react';
+import AnimatedImage from '@/components/AnimatedImage';
+import { Skeleton } from '@/components/ui/skeleton';
 
 const Team: React.FC = () => {
   const teamMembers = [
@@ -134,10 +136,13 @@ const Team: React.FC = () => {
               {teamMembers.map((member, index) => (
                 <div key={index} className="bg-white rounded-xl shadow-sm overflow-hidden">
                   <div className="aspect-[4/3] relative">
-                    <img 
+                    <AnimatedImage 
                       src={member.image} 
                       alt={member.name}
                       className="w-full h-full object-cover"
+                      loading="lazy"
+                      revealAnimation="fade"
+                      delay={(index % 3) * 100}
                     />
                   </div>
                   <div className="p-6">
@@ -169,10 +174,13 @@ const Team: React.FC = () => {
                 {advisors.map((advisor, index) => (
                   <div key={index} className="flex flex-col items-center text-center p-6 glass rounded-xl">
                     <div className="w-24 h-24 rounded-full overflow-hidden mb-4">
-                      <img 
+                      <AnimatedImage 
                         src={advisor.image} 
                         alt={advisor.name}
                         className="w-full h-full object-cover"
+                        loading="lazy"
+                        revealAnimation="fade"
+                        delay={index * 100}
                       />
                     </div>
                     <h3 className="text-xl font-bold">{advisor.name}</h3>

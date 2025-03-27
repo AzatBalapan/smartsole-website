@@ -1,10 +1,11 @@
+
 import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route, useLocation } from "react-router-dom";
 import { LanguageProvider } from "@/contexts/LanguageContext";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import Index from "./pages/Index";
 import Research from "./pages/Research";
 import Team from "./pages/Team";
@@ -17,6 +18,7 @@ const queryClient = new QueryClient();
 // Custom cursor component to be used across all pages
 const CursorManager = () => {
   const location = useLocation();
+  const [cursorPosition, setCursorPosition] = useState({ x: 0, y: 0 });
   
   useEffect(() => {
     // Initialize custom cursor
@@ -30,17 +32,34 @@ const CursorManager = () => {
     }
     
     const moveCursor = (e: MouseEvent) => {
+      setCursorPosition({ x: e.clientX, y: e.clientY });
+      
       if (cursor instanceof HTMLElement) {
         cursor.style.left = `${e.clientX}px`;
         cursor.style.top = `${e.clientY}px`;
       }
     };
     
+    const handleMouseLeave = () => {
+      if (cursor instanceof HTMLElement) {
+        cursor.style.opacity = '0';
+      }
+    };
+    
+    const handleMouseEnter = () => {
+      if (cursor instanceof HTMLElement) {
+        cursor.style.opacity = '1';
+      }
+    };
+    
     document.addEventListener('mousemove', moveCursor);
+    document.documentElement.addEventListener('mouseleave', handleMouseLeave);
+    document.documentElement.addEventListener('mouseenter', handleMouseEnter);
     
     return () => {
       document.removeEventListener('mousemove', moveCursor);
-      // Don't remove the cursor element on unmount to keep it across page changes
+      document.documentElement.removeEventListener('mouseleave', handleMouseLeave);
+      document.documentElement.removeEventListener('mouseenter', handleMouseEnter);
     };
   }, [location.pathname]); // Re-initialize when path changes
   
