@@ -10,7 +10,7 @@ const Team: React.FC = () => {
       name: "Dr. Gulnur Kalimuldina",
       role: "Founder",
       bio: "Leads the MiraiTech team with extensive expertise in biomedical engineering and innovative medical device development.",
-      image: "/lovable-uploads/e3fa24a7-153b-4215-b531-8ddf4a408ff4.png",
+      image: "/lovable-uploads/e3fa24a7-153b-4215-b531-8ddf4a408ff4.png", 
       social: {
         linkedin: "#"
       }
@@ -28,7 +28,7 @@ const Team: React.FC = () => {
       name: "Adeliya Anash",
       role: "Project Manager",
       bio: "Oversees the planning, execution, and delivery of MiraiTech's projects ensuring seamless coordination across all teams.",
-      image: "/lovable-uploads/d309a1d5-0387-4dc7-be96-0cdae01cca10.png",
+      image: "/lovable-uploads/d309a1d5-0387-4dc7-be96-0cdae01cca10.png", 
       social: {
         linkedin: "#"
       }
@@ -148,11 +148,6 @@ const Team: React.FC = () => {
                       {member.social.linkedin && (
                         <a href={member.social.linkedin} className="text-muted-foreground hover:text-primary transition-colors" aria-label="LinkedIn">
                           <Linkedin size={18} />
-                        </a>
-                      )}
-                      {member.social.twitter && (
-                        <a href={member.social.twitter} className="text-muted-foreground hover:text-primary transition-colors" aria-label="Twitter">
-                          <Twitter size={18} />
                         </a>
                       )}
                       {member.social.github && (
