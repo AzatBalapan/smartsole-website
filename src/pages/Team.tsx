@@ -1,12 +1,24 @@
 
-import React from 'react';
+import React, { useEffect } from 'react';
 import NavBar from '@/components/NavBar';
 import Footer from '@/components/Footer';
 import { Github, Linkedin } from 'lucide-react';
-import AnimatedImage from '@/components/AnimatedImage';
-import { Skeleton } from '@/components/ui/skeleton';
+import InstantImage from '@/components/InstantImage';
 
 const Team: React.FC = () => {
+  // Preload all team member images on component mount
+  useEffect(() => {
+    teamMembers.forEach(member => {
+      const img = new Image();
+      img.src = member.image;
+    });
+    
+    advisors.forEach(advisor => {
+      const img = new Image();
+      img.src = advisor.image;
+    });
+  }, []);
+
   const teamMembers = [
     {
       name: "Dr. Gulnur Kalimuldina",
@@ -136,13 +148,12 @@ const Team: React.FC = () => {
               {teamMembers.map((member, index) => (
                 <div key={index} className="bg-white rounded-xl shadow-sm overflow-hidden">
                   <div className="aspect-[4/3] relative">
-                    <AnimatedImage 
+                    <InstantImage 
                       src={member.image} 
                       alt={member.name}
                       className="w-full h-full object-cover"
-                      loading="lazy"
-                      revealAnimation="fade"
-                      delay={(index % 3) * 100}
+                      preload={true}
+                      priority={index < 6} // Prioritize loading for first 6 images
                     />
                   </div>
                   <div className="p-6">
@@ -174,13 +185,11 @@ const Team: React.FC = () => {
                 {advisors.map((advisor, index) => (
                   <div key={index} className="flex flex-col items-center text-center p-6 glass rounded-xl">
                     <div className="w-24 h-24 rounded-full overflow-hidden mb-4">
-                      <AnimatedImage 
+                      <InstantImage 
                         src={advisor.image} 
                         alt={advisor.name}
                         className="w-full h-full object-cover"
-                        loading="lazy"
-                        revealAnimation="fade"
-                        delay={index * 100}
+                        preload={true}
                       />
                     </div>
                     <h3 className="text-xl font-bold">{advisor.name}</h3>
