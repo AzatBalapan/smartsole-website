@@ -5,6 +5,7 @@ import { Skeleton } from '@/components/ui/skeleton';
 
 interface InstantImageProps extends React.ImgHTMLAttributes<HTMLImageElement> {
   preload?: boolean;
+  priority?: boolean; // Added priority prop
 }
 
 const InstantImage: React.FC<InstantImageProps> = ({
@@ -12,6 +13,7 @@ const InstantImage: React.FC<InstantImageProps> = ({
   alt,
   className,
   preload = true,
+  priority = false, // Default to false
   ...props
 }) => {
   const [isLoaded, setIsLoaded] = useState(false);

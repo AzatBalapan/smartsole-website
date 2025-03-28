@@ -134,7 +134,7 @@
     background-position: center;
     pointer-events: none;
     z-index: 9999;
-    transform: translate(-50%, -50%);
+    transform: translate(0, 0); /* Changed from translate(-50%, -50%) to position at upper left */
     transition: transform 0.05s ease;
     will-change: transform, left, top;
     left: 0;
@@ -158,6 +158,6 @@
   input:focus ~ .custom-cursor,
   textarea:focus ~ .custom-cursor,
   select:focus ~ .custom-cursor {
-    transform: translate(-50%, -50%) scale(0.8);
+    transform: translate(0, 0) scale(0.8); /* Updated from translate(-50%, -50%) scale(0.8) */
   }
 }

@@ -35,6 +35,7 @@ const CursorManager = () => {
       setCursorPosition({ x: e.clientX, y: e.clientY });
       
       if (cursor instanceof HTMLElement) {
+        // Use direct position instead of transform with negative offsets
         cursor.style.left = `${e.clientX}px`;
         cursor.style.top = `${e.clientY}px`;
       }
