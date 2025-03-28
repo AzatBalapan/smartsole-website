@@ -1,7 +1,7 @@
 
 import React from 'react';
 import { cn } from '@/lib/utils';
-import { Mail, Phone, MapPin, Instagram } from 'lucide-react';
+import { Mail, Phone, MapPin } from 'lucide-react';
 import Button from './Button';
 
 const Footer: React.FC = () => {
@@ -19,6 +19,7 @@ const Footer: React.FC = () => {
       title: "Product",
       links: [
         { name: "How It Works", href: "#how-it-works" },
+        { name: "Features", href: "#features" },
         { name: "Pricing", href: "#" },
         { name: "FAQ", href: "#" }
       ]
@@ -28,6 +29,7 @@ const Footer: React.FC = () => {
       links: [
         { name: "About Us", href: "#" },
         { name: "Research", href: "/research" },
+        { name: "Team", href: "/team" },
         { name: "Blog", href: "#" },
         { name: "Partners", href: "#" }
       ]
@@ -91,12 +93,6 @@ const Footer: React.FC = () => {
               <div className="flex items-start">
                 <MapPin className="h-4 w-4 mr-2 text-primary flex-shrink-0 mt-1" />
                 <span className="text-sm">53 Kabanbay Batyr Avenue, Nazarbayev University<br/>Astana, 010000<br/>Kazakhstan</span>
-              </div>
-              <div className="flex items-center">
-                <Instagram className="h-4 w-4 mr-2 text-primary" />
-                <a href="https://www.instagram.com/miraitech.ai/" target="_blank" rel="noopener noreferrer" className="text-sm hover:text-primary transition-colors">
-                  @miraitech.ai
-                </a>
               </div>
             </div>
           </div>

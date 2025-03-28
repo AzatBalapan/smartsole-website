@@ -1,7 +1,6 @@
-
 import React from 'react';
 import { Button } from '@/components/ui/button';
-import InstantImage from './InstantImage';
+import AnimatedImage from './AnimatedImage';
 import { ArrowRight, Activity, Bluetooth, Zap, Footprints, HeartPulse, Ruler } from 'lucide-react';
 
 const Hero: React.FC = () => {
@@ -18,11 +17,11 @@ const Hero: React.FC = () => {
                 <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span>
                 <span className="relative inline-flex rounded-full h-2 w-2 bg-primary"></span>
               </span>
-              Scientific Innovation
+              Introducing a new era of smart insoles
             </div>
             
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold leading-tight tracking-tight animate-fade-in animation-delay-100">
-              Advancing <span className="text-gradient">Science</span> with MiraiTech
+              Feel Every <span className="text-gradient">Step</span> with MiraiTech
             </h1>
             
             <div className="flex flex-col sm:flex-row gap-4 animate-fade-in animation-delay-300">
@@ -69,12 +68,11 @@ const Hero: React.FC = () => {
             </div>
             
             <div className="relative z-10 w-full max-w-md mx-auto">
-              <InstantImage 
-                src="/lovable-uploads/583f38d2-3db4-431e-b594-6ef32e215381.png" 
-                alt="MiraiTech Knee Analysis" 
+              <AnimatedImage 
+                src="/placeholder.svg" 
+                alt="MiraiTech Insole" 
                 className="w-full h-auto rounded-2xl shadow-xl"
-                preload={true}
-                priority={true}
+                revealAnimation="scale"
               />
               
               <div className="absolute -right-6 -bottom-6 p-4 glass rounded-xl shadow-lg animate-slide-up animation-delay-700">

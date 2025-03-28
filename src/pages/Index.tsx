@@ -2,10 +2,10 @@
 import React, { useEffect } from 'react';
 import NavBar from '@/components/NavBar';
 import Hero from '@/components/Hero';
+import Features from '@/components/Features';
+import HowItWorks from '@/components/HowItWorks';
 import Footer from '@/components/Footer';
 import ScrollToTopButton from '@/components/ScrollToTopButton';
-import HowItWorks from '@/components/HowItWorks';
-import Features from '@/components/Features';
 
 const Index = () => {
   useEffect(() => {
