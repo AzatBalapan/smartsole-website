@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Button } from '@/components/ui/button';
 import AnimatedImage from './AnimatedImage';
@@ -17,11 +18,11 @@ const Hero: React.FC = () => {
                 <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span>
                 <span className="relative inline-flex rounded-full h-2 w-2 bg-primary"></span>
               </span>
-              Introducing a new era of smart insoles
+              Scientific Innovation
             </div>
             
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold leading-tight tracking-tight animate-fade-in animation-delay-100">
-              Feel Every <span className="text-gradient">Step</span> with MiraiTech
+              Advancing <span className="text-gradient">Science</span> with MiraiTech
             </h1>
             
             <div className="flex flex-col sm:flex-row gap-4 animate-fade-in animation-delay-300">
