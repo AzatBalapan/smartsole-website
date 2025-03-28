@@ -1,7 +1,7 @@
 
 import React from 'react';
 import { Button } from '@/components/ui/button';
-import AnimatedImage from './AnimatedImage';
+import InstantImage from './InstantImage';
 import { ArrowRight, Activity, Bluetooth, Zap, Footprints, HeartPulse, Ruler } from 'lucide-react';
 
 const Hero: React.FC = () => {
@@ -69,11 +69,12 @@ const Hero: React.FC = () => {
             </div>
             
             <div className="relative z-10 w-full max-w-md mx-auto">
-              <AnimatedImage 
-                src="/placeholder.svg" 
-                alt="MiraiTech Insole" 
+              <InstantImage 
+                src="/lovable-uploads/583f38d2-3db4-431e-b594-6ef32e215381.png" 
+                alt="MiraiTech Knee Analysis" 
                 className="w-full h-auto rounded-2xl shadow-xl"
-                revealAnimation="scale"
+                preload={true}
+                priority={true}
               />
               
               <div className="absolute -right-6 -bottom-6 p-4 glass rounded-xl shadow-lg animate-slide-up animation-delay-700">

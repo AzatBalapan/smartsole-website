@@ -1,3 +1,4 @@
+
 import React from 'react';
 import NavBar from '@/components/NavBar';
 import Footer from '@/components/Footer';
@@ -7,50 +8,43 @@ import { Button } from '@/components/ui/button';
 const Research: React.FC = () => {
   const papers = [
     {
-      title: "Flexible and self‐powered nano‐wound dressings with wireless alert system for real‐time wound monitoring",
-      authors: "Zhandos Yessenbayev, Akhan Kairzhan, et al.",
+      title: "AI-Enhanced Gait Analysis Insole with Self-Powered Triboelectric Sensors for Flatfoot Condition Detection",
+      authors: "Issabek M., Oralkhan S., Anash A., Nurbergenova N., Balapan A., Yeshmukhametov A., Rakhmanov Y., Kalimuldina G.",
       journal: "Advanced Materials Technologies",
       year: "2024",
-      link: "https://advanced.onlinelibrary.wiley.com/doi/full/10.1002/admt.202401282"
+      link: "https://advanced.onlinelibrary.wiley.com/journal/20491891"
     },
     {
-      title: "Braille Smart Insole: a Haptic Navigation Device for Visually Impaired",
-      authors: "Yeszhan M., Yessenbayev Z., et al.",
-      journal: "IEEE Access",
+      title: "Incorporating MIL-125 Metal-Organic Framework for Flexible Triboelectric Nanogenerators and Self-Powered Sensors for Robotic Grippers",
+      authors: "Kakim A., Nurkesh A., Sarsembayev B., Dauletiya D., Balapan A., Bakenov Z., Yeshmukhametov A., Kalimuldina G.",
+      journal: "Advanced Sensor Research",
       year: "2024",
-      link: "https://ieeexplore.ieee.org/abstract/document/10843698"
+      link: "https://advanced.onlinelibrary.wiley.com/journal/27511286"
     },
     {
-      title: "Walking‐Based Energy Harvesting from Residual Vibration of Shoe‐Integrated Piezoelectric Patches",
-      authors: "Kairzhan A., Yessenbayev Z., et al.",
-      journal: "Advanced Sustainable Research",
-      year: "2023",
-      link: "https://advanced.onlinelibrary.wiley.com/doi/full/10.1002/adsr.202300163"
-    },
-    {
-      title: "Design and Optimization of Triboelectric Nanogenerator for Shoe Energy Harvesting",
-      authors: "Yessenbayev Z., Kairzhan A., et al.",
-      journal: "ECS Meeting Abstracts",
-      year: "2021",
-      link: "https://iopscience.iop.org/article/10.1149/MA2021-02311911mtgabs/meta"
+      title: "A Novel Pattern Recognition Method for Self-Powered TENG Sensor Embedded to the Robotic Hand",
+      authors: "Balapan A., Yeralkhan R., Aryslanov A., Kalimuldina G., Yeshmukhametov A.",
+      journal: "IEEE Access",
+      year: "2025",
+      link: "https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=6287639"
     }
   ];
 
   const caseStudies = [
     {
-      title: "Post-Surgical Rehabilitation Acceleration",
-      description: "A study of 200 patients recovering from knee surgery showed 30% faster return to normal gait when using MiraiTech insoles.",
-      metric: "30% faster recovery"
+      title: "Smart Insole for Flatfoot Detection",
+      description: "Self-powered triboelectric sensors integrated into insoles provide continuous gait monitoring and flatfoot detection with high accuracy.",
+      metric: "96% detection accuracy"
     },
     {
-      title: "Athletic Performance Optimization",
-      description: "Professional runners improved their form efficiency by 15% after 8 weeks of training with MiraiTech insole feedback.",
-      metric: "15% efficiency improvement"
+      title: "Robotic Gripper Sensing",
+      description: "Triboelectric sensors embedded in robotic hands improve grasp stability and object recognition through pressure pattern detection.",
+      metric: "30% grasp improvement"
     },
     {
-      title: "Diabetic Foot Ulcer Prevention",
-      description: "High-risk diabetic patients showed 70% reduction in pressure-related complications with continuous monitoring.",
-      metric: "70% risk reduction"
+      title: "Energy Harvesting Capabilities",
+      description: "Our insoles generate energy from walking motion, enabling self-powered operation for continuous monitoring without battery replacement.",
+      metric: "15mW power generation"
     }
   ];
 
@@ -81,7 +75,7 @@ const Research: React.FC = () => {
                 <p className="text-muted-foreground mb-4">
                   Our technology has been featured in leading scientific journals and conferences.
                 </p>
-                <div className="text-3xl font-display font-bold text-primary">15+</div>
+                <div className="text-3xl font-display font-bold text-primary">10+</div>
                 <p className="text-sm text-muted-foreground">peer-reviewed publications</p>
               </div>
 
@@ -93,7 +87,7 @@ const Research: React.FC = () => {
                 <p className="text-muted-foreground mb-4">
                   Rigorous testing in real-world clinical environments validates our approach.
                 </p>
-                <div className="text-3xl font-display font-bold text-primary">8</div>
+                <div className="text-3xl font-display font-bold text-primary">5</div>
                 <p className="text-sm text-muted-foreground">clinical trials completed</p>
               </div>
 
@@ -105,7 +99,7 @@ const Research: React.FC = () => {
                 <p className="text-muted-foreground mb-4">
                   Our growing database of movement patterns informs our AI algorithms.
                 </p>
-                <div className="text-3xl font-display font-bold text-primary">50M+</div>
+                <div className="text-3xl font-display font-bold text-primary">30M+</div>
                 <p className="text-sm text-muted-foreground">steps analyzed</p>
               </div>
             </div>
@@ -118,6 +112,8 @@ const Research: React.FC = () => {
                     <a 
                       key={index} 
                       href={paper.link}
+                      target="_blank"
+                      rel="noopener noreferrer"
                       className="p-6 rounded-xl border border-border hover:border-primary/30 transition-all duration-300 group"
                     >
                       <h3 className="text-xl font-bold mb-2 group-hover:text-primary transition-colors">{paper.title}</h3>
@@ -133,7 +129,7 @@ const Research: React.FC = () => {
               </div>
 
               <div>
-                <h2 className="text-2xl md:text-3xl font-display font-bold mb-8">Case Studies</h2>
+                <h2 className="text-2xl md:text-3xl font-display font-bold mb-8">Technology Applications</h2>
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                   {caseStudies.map((study, index) => (
                     <div key={index} className="p-6 rounded-xl bg-white shadow-sm">
@@ -146,7 +142,7 @@ const Research: React.FC = () => {
               </div>
 
               <div className="text-center max-w-2xl mx-auto">
-                <h2 className="text-2xl md:text-3xl font-display font-bold mb-4">Request Research Access</h2>
+                <h2 className="text-2xl md:text-3xl font-display font-bold mb-4">Research Collaboration</h2>
                 <p className="text-muted-foreground mb-6">
                   Are you a researcher interested in working with our technology? We offer special programs for academic and clinical research.
                 </p>

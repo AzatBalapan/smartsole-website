@@ -29,17 +29,13 @@ const NavBar = () => {
   
   // Define navigation links based on current route
   const homeNavLinks = [
-    { name: t('nav.howItWorks'), href: '#how-it-works' },
-    { name: t('nav.features'), href: '#features' },
     { name: t('nav.research'), href: '/research' },
-    { name: t('nav.team'), href: '/team' },
     { name: t('nav.contact'), href: '/contact' },
   ];
   
   const otherPagesNavLinks = [
     { name: t('nav.home'), href: '/' },
     { name: t('nav.research'), href: '/research' },
-    { name: t('nav.team'), href: '/team' },
     { name: t('nav.contact'), href: '/contact' },
   ];
   
