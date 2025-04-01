@@ -2,8 +2,6 @@
 import React, { useEffect } from 'react';
 import NavBar from '@/components/NavBar';
 import Hero from '@/components/Hero';
-import Features from '@/components/Features';
-import HowItWorks from '@/components/HowItWorks';
 import Footer from '@/components/Footer';
 import ScrollToTopButton from '@/components/ScrollToTopButton';
 
@@ -18,8 +16,6 @@ const Index = () => {
       <NavBar />
       <main className="flex-grow">
         <Hero />
-        <HowItWorks />
-        <Features />
       </main>
       <Footer />
     </div>

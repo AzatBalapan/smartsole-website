@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Button } from '@/components/ui/button';
 import AnimatedImage from './AnimatedImage';
@@ -69,8 +70,8 @@ const Hero: React.FC = () => {
             
             <div className="relative z-10 w-full max-w-md mx-auto">
               <AnimatedImage 
-                src="/placeholder.svg" 
-                alt="MiraiTech Insole" 
+                src="/lovable-uploads/33aa8495-3a5c-4331-9db3-1575e22193fc.png" 
+                alt="MiraiTech Insole Runner" 
                 className="w-full h-auto rounded-2xl shadow-xl"
                 revealAnimation="scale"
               />

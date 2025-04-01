@@ -1,3 +1,4 @@
+
 import React from 'react';
 import NavBar from '@/components/NavBar';
 import Footer from '@/components/Footer';
@@ -7,32 +8,25 @@ import { Button } from '@/components/ui/button';
 const Research: React.FC = () => {
   const papers = [
     {
-      title: "Flexible and self‐powered nano‐wound dressings with wireless alert system for real‐time wound monitoring",
-      authors: "Zhandos Yessenbayev, Akhan Kairzhan, et al.",
+      title: "AI-Enhanced Gait Analysis Insole with Self-Powered Triboelectric Sensors for Flatfoot Condition Detection",
+      authors: "Issabek, Moldir and Oralkhan, Sabyrzhan and Anash, Adeliya and Nurbergenova, Nuriya and Balapan, Azat and Yeshmukhametov, Azamat and Rakhmanov, Yeltay and Kalimuldina, Gulnur",
       journal: "Advanced Materials Technologies",
       year: "2024",
       link: "https://advanced.onlinelibrary.wiley.com/doi/full/10.1002/admt.202401282"
     },
     {
-      title: "Braille Smart Insole: a Haptic Navigation Device for Visually Impaired",
-      authors: "Yeszhan M., Yessenbayev Z., et al.",
-      journal: "IEEE Access",
+      title: "Incorporating MIL-125 Metal-Organic Framework for Flexible Triboelectric Nanogenerators and Self-Powered Sensors for Robotic Grippers",
+      authors: "Kakim, Alibek and Nurkesh, Ayan and Sarsembayev, Bayandy and Dauletiya, Daniyar and Balapan, Azat and Bakenov, Zhumabay and Yeshmukhametov, Azamat and Kalimuldina, Gulnur",
+      journal: "Advanced Sensor Research",
       year: "2024",
-      link: "https://ieeexplore.ieee.org/abstract/document/10843698"
-    },
-    {
-      title: "Walking‐Based Energy Harvesting from Residual Vibration of Shoe‐Integrated Piezoelectric Patches",
-      authors: "Kairzhan A., Yessenbayev Z., et al.",
-      journal: "Advanced Sustainable Research",
-      year: "2023",
       link: "https://advanced.onlinelibrary.wiley.com/doi/full/10.1002/adsr.202300163"
     },
     {
-      title: "Design and Optimization of Triboelectric Nanogenerator for Shoe Energy Harvesting",
-      authors: "Yessenbayev Z., Kairzhan A., et al.",
-      journal: "ECS Meeting Abstracts",
-      year: "2021",
-      link: "https://iopscience.iop.org/article/10.1149/MA2021-02311911mtgabs/meta"
+      title: "A Novel Pattern Recognition Method for Self-Powered TENG Sensor Embedded to the Robotic Hand",
+      authors: "Balapan, Azat and Yeralkhan, Rauan and Aryslanov, Alikhan and Kalimuldina, Gulnur and Yeshmukhametov, Azamat",
+      journal: "IEEE Access",
+      year: "2025",
+      link: "https://ieeexplore.ieee.org/abstract/document/10843698"
     }
   ];
 
@@ -118,6 +112,8 @@ const Research: React.FC = () => {
                     <a 
                       key={index} 
                       href={paper.link}
+                      target="_blank"
+                      rel="noopener noreferrer"
                       className="p-6 rounded-xl border border-border hover:border-primary/30 transition-all duration-300 group"
                     >
                       <h3 className="text-xl font-bold mb-2 group-hover:text-primary transition-colors">{paper.title}</h3>
