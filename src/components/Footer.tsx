@@ -115,20 +115,6 @@ const Footer: React.FC = () => {
             </div>
           ))}
           
-          <div className="space-y-4 md:col-span-2">
-            <h4 className="font-bold text-base">Stay Updated</h4>
-            <p className="text-sm text-muted-foreground">
-              Subscribe to receive the latest news and early access to new features.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-2 sm:gap-0">
-              <input
-                type="email"
-                placeholder="Enter your email"
-                className="flex h-10 w-full rounded-l-md border border-input bg-background px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-primary"
-              />
-              <Button className="sm:rounded-l-none">Subscribe</Button>
-            </div>
-          </div>
         </div>
         
         <div className="pt-8 border-t border-border flex flex-col md:flex-row justify-between items-center gap-4">
