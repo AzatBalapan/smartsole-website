@@ -109,9 +109,6 @@ const HowItWorks: React.FC = () => {
                 <h3 className="text-2xl md:text-3xl font-display font-bold tracking-tight">
                   The Technology Behind SmartSole
                 </h3>
-                <p className="text-lg">
-                  Our proprietary sensor array uses micro-pressure detection technology originally developed for medical applications, now miniaturized for everyday use.
-                </p>
                 <div className="grid grid-cols-2 gap-4">
                   <div className="bg-white/80 backdrop-blur-sm p-4 rounded-lg">
                     <div className="text-3xl font-display font-bold text-primary mb-1">64</div>
