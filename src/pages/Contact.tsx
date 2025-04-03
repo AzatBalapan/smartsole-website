@@ -22,9 +22,6 @@ const Contact: React.FC = () => {
               <h1 className="text-4xl md:text-5xl font-display font-bold tracking-tight">
                 Get In Touch
               </h1>
-              <p className="text-xl text-muted-foreground">
-                We'd love to hear from you. Our team is ready to answer your questions and help you discover how MiraiTech can transform your movement analysis.
-              </p>
             </div>
 
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-16">
