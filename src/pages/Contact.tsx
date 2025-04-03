@@ -19,9 +19,6 @@ const Contact: React.FC = () => {
               <div className="inline-flex items-center px-3 py-1 rounded-full border border-primary/30 bg-primary/5 text-sm text-primary font-medium">
                 Contact Us
               </div>
-              <h1 className="text-4xl md:text-5xl font-display font-bold tracking-tight">
-                Get In Touch
-              </h1>
             </div>
 
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-16">
