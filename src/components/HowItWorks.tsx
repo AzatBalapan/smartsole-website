@@ -2,6 +2,7 @@
 import React, { useState } from 'react';
 import { cn } from '@/lib/utils';
 import AnimatedImage from './AnimatedImage';
+import { Youtube } from 'lucide-react';
 
 const HowItWorks: React.FC = () => {
   const [activeStep, setActiveStep] = useState<number | null>(null);
@@ -90,16 +91,15 @@ const HowItWorks: React.FC = () => {
           <div className="relative">
             <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-64 h-64 bg-primary/10 rounded-full filter blur-3xl animate-pulse-slow" />
             <div className="relative z-10 rounded-2xl shadow-xl overflow-hidden">
-              <video 
-                className="w-full h-auto"
-                autoPlay
-                muted
-                loop
-                playsInline
-              >
-                <source src="/placeholder.mp4" type="video/mp4" />
-                Your browser does not support the video tag.
-              </video>
+              <div className="aspect-video w-full">
+                <iframe
+                  className="w-full h-full"
+                  src="https://www.youtube.com/embed/VWmFyXq70i8"
+                  title="MiraiTech Smart Insole Demo"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowFullScreen
+                ></iframe>
+              </div>
             </div>
           </div>
         </div>
