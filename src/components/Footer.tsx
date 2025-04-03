@@ -74,10 +74,6 @@ const Footer: React.FC = () => {
               />
             </div>
             
-            <p className="text-muted-foreground">
-              Revolutionizing how you understand and improve your movement through intelligent tactile feedback in smart insoles.
-            </p>
-            
             <div className="space-y-3">
               <div className="flex items-start">
                 <Mail className="h-4 w-4 mr-2 text-primary flex-shrink-0 mt-1" />
