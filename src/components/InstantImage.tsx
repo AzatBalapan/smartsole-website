@@ -1,11 +1,11 @@
 
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { cn } from '@/lib/utils';
 import { Skeleton } from '@/components/ui/skeleton';
 
 interface InstantImageProps extends React.ImgHTMLAttributes<HTMLImageElement> {
   preload?: boolean;
-  priority?: boolean; // Added priority prop
+  priority?: boolean;
 }
 
 const InstantImage: React.FC<InstantImageProps> = ({
@@ -13,16 +13,27 @@ const InstantImage: React.FC<InstantImageProps> = ({
   alt,
   className,
   preload = true,
-  priority = false, // Default to false
+  priority = false,
   ...props
 }) => {
   const [isLoaded, setIsLoaded] = useState(false);
   
-  // Preload the image immediately
-  if (preload && src) {
-    const img = new Image();
-    img.src = src;
-  }
+  // Preload the image immediately on component mount
+  useEffect(() => {
+    if (preload && src) {
+      const img = new Image();
+      img.src = src;
+      
+      // If already cached, set as loaded
+      if (img.complete) {
+        setIsLoaded(true);
+      } else {
+        img.onload = () => {
+          setIsLoaded(true);
+        };
+      }
+    }
+  }, [src, preload]);
   
   return (
     <div className="relative overflow-hidden w-full h-full">
@@ -33,6 +44,7 @@ const InstantImage: React.FC<InstantImageProps> = ({
         className={cn("w-full h-full object-cover", isLoaded ? "opacity-100" : "opacity-0", className)}
         onLoad={() => setIsLoaded(true)}
         style={{ transition: 'opacity 0.2s ease-out' }}
+        {...(priority ? { fetchPriority: "high" } as any : {})}
         {...props}
       />
     </div>

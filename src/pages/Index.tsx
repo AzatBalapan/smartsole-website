@@ -9,6 +9,47 @@ const Index = () => {
   useEffect(() => {
     // Scroll to top on page load
     window.scrollTo(0, 0);
+    
+    // Preload team images in the background after the homepage is loaded
+    const preloadTeamImages = () => {
+      const teamImages = [
+        '/lovable-uploads/Gulnur-min.jpg',
+        '/lovable-uploads/Azamat-min.jpg',
+        '/lovable-uploads/Adeliya-min.jpg',
+        '/lovable-uploads/Anton-min.jpg',
+        '/lovable-uploads/Moldir-min.jpg',
+        '/lovable-uploads/Azat-min.jpg',
+        '/lovable-uploads/Sultandiyar-min.jpg',
+        '/lovable-uploads/Manat-min.jpg',
+        '/lovable-uploads/Nurasil-min.jpg'
+      ];
+      
+      // Use requestIdleCallback or setTimeout to defer loading until after critical content
+      if ('requestIdleCallback' in window) {
+        (window as any).requestIdleCallback(() => {
+          teamImages.forEach(src => {
+            const img = new Image();
+            img.src = src;
+          });
+        });
+      } else {
+        // Fallback for browsers that don't support requestIdleCallback
+        setTimeout(() => {
+          teamImages.forEach(src => {
+            const img = new Image();
+            img.src = src;
+          });
+        }, 1000); // Wait for 1 second after page load
+      }
+    };
+    
+    // Start preloading after the main content is loaded
+    if (document.readyState === 'complete') {
+      preloadTeamImages();
+    } else {
+      window.addEventListener('load', preloadTeamImages);
+      return () => window.removeEventListener('load', preloadTeamImages);
+    }
   }, []);
 
   return (

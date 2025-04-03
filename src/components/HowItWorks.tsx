@@ -11,24 +11,28 @@ const HowItWorks: React.FC = () => {
     {
       number: '01',
       title: 'Insert in Your Shoes',
+      description: 'Place the ultra-thin SmartSole into any footwear with ease.',
       delay: 100,
       image: '/placeholder.svg'
     },
     {
       number: '02',
       title: 'Connect to Your Device',
+      description: 'Pair instantly via Bluetooth to your smartphone or tablet.',
       delay: 300,
       image: '/placeholder.svg'
     },
     {
       number: '03',
       title: 'Calibrate Your Profile',
+      description: 'Set up your personalized metrics for accurate tracking.',
       delay: 500,
       image: '/placeholder.svg'
     },
     {
       number: '04',
       title: 'Start Moving',
+      description: 'Get real-time feedback as you walk, run, or exercise.',
       delay: 700,
       image: '/placeholder.svg'
     }
