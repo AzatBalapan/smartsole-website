@@ -11,28 +11,24 @@ const HowItWorks: React.FC = () => {
     {
       number: '01',
       title: 'Insert in Your Shoes',
-      description: 'Simply place the SmartSole inserts into any pair of shoes. The ultra-thin design ensures comfort without sacrificing function.',
       delay: 100,
       image: '/placeholder.svg'
     },
     {
       number: '02',
       title: 'Connect to Your Device',
-      description: 'Pair with the SmartSole app via Bluetooth. The seamless connection process takes less than 30 seconds.',
       delay: 300,
       image: '/placeholder.svg'
     },
     {
       number: '03',
       title: 'Calibrate Your Profile',
-      description: 'Take a few steps to calibrate the sensors to your unique walking pattern for personalized analysis and save your data for future analysis.',
       delay: 500,
       image: '/placeholder.svg'
     },
     {
       number: '04',
       title: 'Start Moving',
-      description: 'Live your life while SmartSole silently collects data, providing insights and feedback as you move.',
       delay: 700,
       image: '/placeholder.svg'
     }
