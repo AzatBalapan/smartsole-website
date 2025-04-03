@@ -173,30 +173,6 @@ const Team: React.FC = () => {
                 </div>
               ))}
             </div>
-
-            <div className="mb-20">
-              <h2 className="text-2xl md:text-3xl font-display font-bold text-center mb-12">
-                Advisory Board
-              </h2>
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-                {advisors.map((advisor, index) => (
-                  <div key={index} className="flex flex-col items-center text-center p-6 glass rounded-xl">
-                    <div className="w-24 h-24 rounded-full overflow-hidden mb-4">
-                      <InstantImage 
-                        src={advisor.image} 
-                        alt={advisor.name}
-                        className="w-full h-full object-cover"
-                        preload={true}
-                      />
-                    </div>
-                    <h3 className="text-xl font-bold">{advisor.name}</h3>
-                    <p className="text-primary font-medium mb-3">{advisor.role}</p>
-                    <p className="text-muted-foreground">{advisor.bio}</p>
-                  </div>
-                ))}
-              </div>
-            </div>
-            
           </div>
         </section>
       </main>
