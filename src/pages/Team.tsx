@@ -39,22 +39,21 @@ const Team: React.FC = () => {
       }
     },
     {
+      name: "Sultandiar Mukhamedkali",
+      role: "Medical Expert",
+      bio: "Provides crucial medical expertise to ensure our technology meets therapeutic standards and delivers meaningful health benefits.",
+      image: "/lovable-uploads/Sultandiyar-min.jpg",
+      social: {
+        linkedin: "#"
+      }
+    },
+    {
       name: "Adeliya Anash",
       role: "Project Manager",
       bio: "Oversees the planning, execution, and delivery of MiraiTech's projects ensuring seamless coordination across all teams.",
       image: "/lovable-uploads/Adeliya-min.jpg", 
       social: {
         linkedin: "#"
-      }
-    },
-    {
-      name: "Anton Novikov",
-      role: "Senior Developer",
-      bio: "Leads the software development team, architecting the technical backbone of MiraiTech's innovative insole solutions.",
-      image: "/lovable-uploads/Anton-min.jpg",
-      social: {
-        linkedin: "#",
-        github: "#"
       }
     },
     {
@@ -77,12 +76,13 @@ const Team: React.FC = () => {
       }
     },
     {
-      name: "Sultandiar Mukhamedkali",
-      role: "Medical Expert",
-      bio: "Provides crucial medical expertise to ensure our technology meets therapeutic standards and delivers meaningful health benefits.",
-      image: "/lovable-uploads/Sultandiyar-min.jpg",
+      name: "Anton Novikov",
+      role: "Senior Developer",
+      bio: "Leads the software development team, architecting the technical backbone of MiraiTech's innovative insole solutions.",
+      image: "/lovable-uploads/Anton-min.jpg",
       social: {
-        linkedin: "#"
+        linkedin: "#",
+        github: "#"
       }
     },
     {
