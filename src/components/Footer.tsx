@@ -88,7 +88,7 @@ const Footer: React.FC = () => {
               </div>
               <div className="flex items-center">
                 <Phone className="h-4 w-4 mr-2 text-primary" />
-                <span className="text-sm">+7 (747) 123-4567</span>
+                <span className="text-sm">+7 (775) 144-5841</span>
               </div>
               <div className="flex items-start">
                 <MapPin className="h-4 w-4 mr-2 text-primary flex-shrink-0 mt-1" />
