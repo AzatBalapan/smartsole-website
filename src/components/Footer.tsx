@@ -49,20 +49,6 @@ const Footer: React.FC = () => {
   return (
     <footer id="contact" className="relative bg-secondary pt-16 pb-8 overflow-hidden">
       <div className="container px-4 md:px-6 mx-auto">
-        <div className="mb-16">
-          <h3 className="text-2xl font-bold mb-8 text-center">Our Partners</h3>
-          <div className="flex flex-wrap justify-center gap-8 items-center">
-            {partners.map((partner, index) => (
-              <div key={index} className="bg-white/80 p-4 rounded-lg shadow-sm">
-                <img 
-                  src={partner.logo} 
-                  alt={partner.name} 
-                  className="h-12 w-auto"
-                />
-              </div>
-            ))}
-          </div>
-        </div>
         
         <div className="grid grid-cols-1 md:grid-cols-6 gap-8 pb-16">
           <div className="md:col-span-2 space-y-6">
