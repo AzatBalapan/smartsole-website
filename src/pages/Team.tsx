@@ -139,9 +139,6 @@ const Team: React.FC = () => {
               <h1 className="text-4xl md:text-5xl font-display font-bold tracking-tight">
                 Meet the Innovators
               </h1>
-              <p className="text-xl text-muted-foreground">
-                Passionate experts dedicated to transforming movement analysis through technology.
-              </p>
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-20">
