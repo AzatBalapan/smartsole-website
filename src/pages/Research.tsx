@@ -51,7 +51,7 @@ const Research: React.FC = () => {
   return (
     <div className="min-h-screen flex flex-col">
       <NavBar />
-      <main className="flex-grow pt-16">
+      <main className="flex-grow pt-5">
         <section className="py-12 md:py-20">
           <div className="container px-4 md:px-6 mx-auto">
             <div className="text-center space-y-4 mb-16 max-w-3xl mx-auto">
