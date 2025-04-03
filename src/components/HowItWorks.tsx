@@ -48,9 +48,6 @@ const HowItWorks: React.FC = () => {
           <h2 className="text-3xl md:text-4xl font-display font-bold tracking-tight">
             Effortless Integration into Your Life
           </h2>
-          <p className="text-muted-foreground text-lg">
-            SmartSole seamlessly becomes part of your daily routine in just a few simple steps.
-          </p>
         </div>
         
         <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-center mb-16">
