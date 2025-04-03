@@ -124,14 +124,7 @@ const Research: React.FC = () => {
                   ))}
                 </div>
               </div>
-
-              <div className="text-center max-w-2xl mx-auto">
-                <h2 className="text-2xl md:text-3xl font-display font-bold mb-4">Request Research Access</h2>
-                <p className="text-muted-foreground mb-6">
-                  Are you a researcher interested in working with our technology? We offer special programs for academic and clinical research.
-                </p>
-                <Button size="lg">Contact Research Team</Button>
-              </div>
+              
             </div>
           </div>
         </section>
