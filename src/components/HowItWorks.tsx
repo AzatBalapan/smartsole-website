@@ -45,9 +45,6 @@ const HowItWorks: React.FC = () => {
           <div className="inline-flex items-center justify-center px-3 py-1 rounded-full border border-primary/30 bg-primary/5 text-sm text-primary font-medium">
             How It Works
           </div>
-          <h2 className="text-3xl md:text-4xl font-display font-bold tracking-tight">
-            Effortless Integration into Your Life
-          </h2>
         </div>
         
         <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-center mb-16">
