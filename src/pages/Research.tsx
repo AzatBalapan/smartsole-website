@@ -61,9 +61,6 @@ const Research: React.FC = () => {
               <h1 className="text-4xl md:text-5xl font-display font-bold tracking-tight">
                 Advancing Motion Science
               </h1>
-              <p className="text-xl text-muted-foreground">
-                Our technology is built on a foundation of rigorous research and clinical validation.
-              </p>
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-20">
