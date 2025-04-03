@@ -196,19 +196,7 @@ const Team: React.FC = () => {
                 ))}
               </div>
             </div>
-
-            <div className="text-center max-w-2xl mx-auto">
-              <h2 className="text-2xl md:text-3xl font-display font-bold mb-4">Join Our Team</h2>
-              <p className="text-muted-foreground mb-6">
-                We're always looking for talented individuals passionate about technology, health, and improving lives.
-              </p>
-              <a 
-                href="#careers" 
-                className="inline-flex items-center justify-center h-10 px-4 py-2 text-sm font-medium rounded-md bg-primary text-white hover:bg-primary/90 transition-colors"
-              >
-                View Open Positions
-              </a>
-            </div>
+            
           </div>
         </section>
       </main>
