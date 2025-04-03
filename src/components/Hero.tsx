@@ -70,7 +70,7 @@ const Hero: React.FC = () => {
             
             <div className="relative z-10 w-full max-w-md mx-auto">
               <AnimatedImage 
-                src="/lovable-uploads/33aa8495-3a5c-4331-9db3-1575e22193fc.png" 
+                src="/lovable-uploads/MiraiTech_home_page-min.png" 
                 alt="MiraiTech Insole Runner" 
                 className="w-full h-auto rounded-2xl shadow-xl"
                 revealAnimation="scale"
