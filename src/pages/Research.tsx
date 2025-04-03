@@ -125,19 +125,6 @@ const Research: React.FC = () => {
                 </div>
               </div>
 
-              <div>
-                <h2 className="text-2xl md:text-3xl font-display font-bold mb-8">Case Studies</h2>
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-                  {caseStudies.map((study, index) => (
-                    <div key={index} className="p-6 rounded-xl bg-white shadow-sm">
-                      <div className="text-xl font-bold text-primary mb-4">{study.metric}</div>
-                      <h3 className="text-lg font-bold mb-2">{study.title}</h3>
-                      <p className="text-muted-foreground">{study.description}</p>
-                    </div>
-                  ))}
-                </div>
-              </div>
-
               <div className="text-center max-w-2xl mx-auto">
                 <h2 className="text-2xl md:text-3xl font-display font-bold mb-4">Request Research Access</h2>
                 <p className="text-muted-foreground mb-6">
