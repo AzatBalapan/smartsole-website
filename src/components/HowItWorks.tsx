@@ -88,7 +88,7 @@ const HowItWorks: React.FC = () => {
               <div className="aspect-video w-full">
                 <iframe
                   className="w-full h-full"
-                  src="https://www.youtube.com/embed/VWmFyXq70i8"
+                  src="https://youtu.be/Jb1qoU7ynuQ"
                   title="MiraiTech Smart Insole Demo"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                   allowFullScreen
