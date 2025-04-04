@@ -108,7 +108,7 @@ const HowItWorks: React.FC = () => {
                 </h3>
                 <div className="grid grid-cols-2 gap-4">
                   <div className="bg-white/80 backdrop-blur-sm p-4 rounded-lg">
-                    <div className="text-3xl font-display font-bold text-primary mb-1">64</div>
+                    <div className="text-3xl font-display font-bold text-primary mb-1">4</div>
                     <div className="text-sm">Pressure points</div>
                   </div>
                   <div className="bg-white/80 backdrop-blur-sm p-4 rounded-lg">
@@ -116,7 +116,7 @@ const HowItWorks: React.FC = () => {
                     <div className="text-sm">Ultra-thin design</div>
                   </div>
                   <div className="bg-white/80 backdrop-blur-sm p-4 rounded-lg">
-                    <div className="text-3xl font-display font-bold text-primary mb-1">99%</div>
+                    <div className="text-3xl font-display font-bold text-primary mb-1">97%</div>
                     <div className="text-sm">Accuracy rating</div>
                   </div>
                   <div className="bg-white/80 backdrop-blur-sm p-4 rounded-lg">
