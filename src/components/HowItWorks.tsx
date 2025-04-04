@@ -11,7 +11,7 @@ const HowItWorks: React.FC = () => {
     {
       number: '01',
       title: 'Insert in Your Shoes',
-      description: 'Place the ultra-thin SmartSole into any footwear with ease.',
+      description: 'Place the ultra-thin insole into any footwear with ease.',
       delay: 100,
       image: '/placeholder.svg'
     },
@@ -104,7 +104,7 @@ const HowItWorks: React.FC = () => {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
               <div className="space-y-6">
                 <h3 className="text-2xl md:text-3xl font-display font-bold tracking-tight">
-                  The Technology Behind SmartSole
+                  The Technology Behind our Insole
                 </h3>
                 <div className="grid grid-cols-2 gap-4">
                   <div className="bg-white/80 backdrop-blur-sm p-4 rounded-lg">
@@ -127,7 +127,7 @@ const HowItWorks: React.FC = () => {
               </div>
               <div className="relative h-[300px] md:h-[400px] rounded-xl overflow-hidden">
                 <AnimatedImage 
-                  src="/placeholder.svg" 
+                  src="/lovable-uploads/IMG_5619-min.JPG" 
                   alt="SmartSole Technology Visualization" 
                   className="w-full h-full object-cover"
                   revealAnimation="blur"
