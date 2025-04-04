@@ -101,7 +101,16 @@ const Specs: React.FC = () => {
           </p>
         </div>
         
-        <div className="bg-white rounded-2xl shadow-lg p-6 md:p-8">
+        <div className="mt-16 rounded-2xl overflow-hidden shadow-lg">
+          <InstantImage
+            src="/lovable-uploads/8933d0c4-1ee6-4a4c-a8b3-da49885642d6.png"
+            alt="MiraiTech Insoles with Left and Right Sensors"
+            className="w-full h-auto"
+            priority={true}
+          />
+        </div>
+        
+        <div className="bg-white rounded-2xl shadow-lg p-6 md:p-8 mt-16">
           <Tabs defaultValue="physical" className="w-full">
             <TabsList className="grid grid-cols-3 md:grid-cols-6 mb-8">
               {specCategories.map((category) => (
@@ -134,15 +143,6 @@ const Specs: React.FC = () => {
               </TabsContent>
             ))}
           </Tabs>
-        </div>
-
-        <div className="mt-16 rounded-2xl overflow-hidden shadow-lg">
-          <InstantImage
-            src="/lovable-uploads/8933d0c4-1ee6-4a4c-a8b3-da49885642d6.png"
-            alt="MiraiTech Insoles with Left and Right Sensors"
-            className="w-full h-auto"
-            priority={true}
-          />
         </div>
       </div>
     </section>
