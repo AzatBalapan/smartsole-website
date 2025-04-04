@@ -7,7 +7,7 @@ import { ArrowRight, Activity, Bluetooth, Zap, Footprints, HeartPulse, Ruler } f
 
 const Hero: React.FC = () => {
   return (
-    <section className="relative overflow-hidden pt-32 pb-20 md:pb-32 md:pt-40">
+    <section className="relative overflow-hidden pt-16 pb-20 md:pb-32 md:pt-20">
       <div className="absolute -top-24 -left-24 w-96 h-96 bg-primary/20 rounded-full filter blur-3xl opacity-50 animate-pulse-slow" />
       <div className="absolute top-1/2 right-0 w-72 h-72 bg-primary/10 rounded-full filter blur-2xl opacity-30 animate-float" />
       
@@ -85,7 +85,7 @@ const Hero: React.FC = () => {
                   </div>
                   <div>
                     <p className="text-sm font-medium">Step Analysis</p>
-                    <p className="text-xs text-muted-foreground">99% Accuracy</p>
+                    <p className="text-xs text-muted-foreground">97% Accuracy</p>
                   </div>
                 </div>
               </div>

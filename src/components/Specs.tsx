@@ -2,6 +2,7 @@
 import React from 'react';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Battery, Bluetooth, Ruler, Cpu, Gauge, Settings } from 'lucide-react';
+import InstantImage from './InstantImage';
 
 const Specs: React.FC = () => {
   const specCategories = [
@@ -24,7 +25,7 @@ const Specs: React.FC = () => {
       icon: <Cpu className="h-5 w-5" />,
       specs: [
         { name: "Sensor Type", value: "Capacitive microfiber array" },
-        { name: "Sensor Count", value: "64 pressure points per insole" },
+        { name: "Sensor Count", value: "4 pressure points per insole" }, // Changed from 64 to 4
         { name: "Precision", value: "±0.01N force detection" },
         { name: "Sampling Rate", value: "200Hz" },
         { name: "Data Storage", value: "512MB onboard memory" },
@@ -75,7 +76,7 @@ const Specs: React.FC = () => {
       name: "Performance",
       icon: <Gauge className="h-5 w-5" />,
       specs: [
-        { name: "Step Accuracy", value: "99.8% in lab conditions" },
+        { name: "Step Accuracy", value: "97% in lab conditions" }, // Changed from 99.8% to 97%
         { name: "Distance Accuracy", value: "±2% compared to GPS" },
         { name: "Calorie Accuracy", value: "±8% compared to metabolic testing" },
         { name: "Temperature Range", value: "-10°C to 50°C / 14°F to 122°F" },
@@ -96,7 +97,7 @@ const Specs: React.FC = () => {
             Engineered for Excellence
           </h2>
           <p className="text-muted-foreground text-lg">
-            Every component of SmartSole has been meticulously designed for optimal performance and reliability.
+            Every component of our insole has been meticulously designed for optimal performance and reliability.
           </p>
         </div>
         
@@ -133,6 +134,15 @@ const Specs: React.FC = () => {
               </TabsContent>
             ))}
           </Tabs>
+        </div>
+
+        <div className="mt-16 rounded-2xl overflow-hidden shadow-lg">
+          <InstantImage
+            src="/lovable-uploads/8933d0c4-1ee6-4a4c-a8b3-da49885642d6.png"
+            alt="MiraiTech Insoles with Left and Right Sensors"
+            className="w-full h-auto"
+            priority={true}
+          />
         </div>
       </div>
     </section>

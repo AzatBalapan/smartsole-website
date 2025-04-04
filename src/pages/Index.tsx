@@ -3,6 +3,7 @@ import React, { useEffect } from 'react';
 import NavBar from '@/components/NavBar';
 import Hero from '@/components/Hero';
 import HowItWorks from '@/components/HowItWorks';
+import Specs from '@/components/Specs';
 import Footer from '@/components/Footer';
 
 const Index = () => {
@@ -58,6 +59,7 @@ const Index = () => {
       <main className="flex-grow">
         <Hero />
         <HowItWorks />
+        <Specs />
       </main>
       <Footer />
     </div>
